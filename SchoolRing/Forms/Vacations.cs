@@ -1,15 +1,7 @@
-﻿using Microsoft.Office.Interop.Excel;
-using SchoolRing.Interfaces;
+﻿using SchoolRing.Interfaces;
 using SchoolRing.IO;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SchoolRing
@@ -110,13 +102,13 @@ namespace SchoolRing
                         throw new ArgumentException("Вече има ваканция с такова наименование!");
                 }
                 IVacationalDays vacation = new VacationalDays(textBox1.Text, dateTimePicker1.Value, dateTimePicker2.Value);
-                if (comboBox1.SelectedIndex >0)
+                if (comboBox1.SelectedIndex > 0)
                 {
                     Program.vdRepo.RemoveModel(Program.vdRepo.GetModel(start, end, currentVCName));
                     //comboBox1.SelectedIndex = -1;
                 }
                 Program.vdRepo.AddModel(vacation);
-                if (comboBox1.SelectedIndex <0)
+                if (comboBox1.SelectedIndex < 0)
                     MessageBox.Show($"Вие добавихте ваканция на име \"{vacation.Argument}\"", "Операцията е извършена успешно");
                 else
                     MessageBox.Show($"Вие редактирахте ваканция на име \"{vacation.Argument}\"", "Операцията е извършена успешно");
@@ -162,7 +154,7 @@ namespace SchoolRing
                 dateTimePicker1.Value = DateTime.Now;
                 dateTimePicker2.Value = DateTime.Now;
             }
-            else if (comboBox1.SelectedIndex != -1&&comboBox1.SelectedIndex!=0)
+            else if (comboBox1.SelectedIndex != -1 && comboBox1.SelectedIndex != 0)
             {
                 IVacationalDays vacation = Program.vdRepo.GetModels().First(x => x.Argument == comboBox1.Text);
                 start = vacation.StartDate;

@@ -32,7 +32,7 @@ namespace SchoolRing
             bool problem = false;
             try
             {
-                
+
                 if (textBoxClassLength.Text.ToCharArray().Any(x => char.IsDigit(x) == false))
                 {
 
@@ -81,7 +81,7 @@ namespace SchoolRing
                     textBoxLongBreakAfter.Text = string.Empty;
                     throw new ArgumentException("Моля въведете стойност между 1 и 6 в полето за голямо междучасие след .. час!");
                 }
-                if(int.Parse(textBoxLongBreak.Text)<int.Parse(textBoxSmallBreak.Text))
+                if (int.Parse(textBoxLongBreak.Text) < int.Parse(textBoxSmallBreak.Text))
                 {
                     throw new ArgumentException("Моля въведете стойност за продължителност на малко междучасие, която е по-малка или равна спрямо тази за голямо междучасие!");
                 }

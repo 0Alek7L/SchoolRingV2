@@ -67,10 +67,9 @@
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Jura", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(239)))), ((int)(((byte)(237)))));
-            this.label1.Location = new System.Drawing.Point(14, 601);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(19, 740);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 22);
+            this.label1.Size = new System.Drawing.Size(80, 27);
             this.label1.TabIndex = 56;
             this.label1.Text = "ПОМОЩ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -83,9 +82,10 @@
             this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(146)))), ((int)(((byte)(164)))));
             this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Image = global::SchoolRing.Properties.Resources.system_solid_140_help_center;
-            this.pictureBox6.Location = new System.Drawing.Point(12, 553);
+            this.pictureBox6.Location = new System.Drawing.Point(16, 681);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(63, 50);
+            this.pictureBox6.Size = new System.Drawing.Size(84, 62);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 55;
             this.pictureBox6.TabStop = false;
@@ -97,9 +97,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(0, 114);
+            this.pictureBox5.Location = new System.Drawing.Point(0, 140);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(75, 66);
+            this.pictureBox5.Size = new System.Drawing.Size(100, 81);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 54;
             this.pictureBox5.TabStop = false;
@@ -114,10 +115,9 @@
             this.labelDayOfWeek.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelDayOfWeek.Font = new System.Drawing.Font("Jura", 37F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDayOfWeek.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(239)))), ((int)(((byte)(237)))));
-            this.labelDayOfWeek.Location = new System.Drawing.Point(239, 550);
-            this.labelDayOfWeek.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDayOfWeek.Location = new System.Drawing.Point(319, 677);
             this.labelDayOfWeek.Name = "labelDayOfWeek";
-            this.labelDayOfWeek.Size = new System.Drawing.Size(544, 71);
+            this.labelDayOfWeek.Size = new System.Drawing.Size(725, 87);
             this.labelDayOfWeek.TabIndex = 53;
             this.labelDayOfWeek.Text = "dayOfWeek";
             this.labelDayOfWeek.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -132,10 +132,10 @@
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox3.ContextMenuStrip = this.contextMenuStrip1;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox3.Location = new System.Drawing.Point(473, 8);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Location = new System.Drawing.Point(631, 10);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(77, 89);
+            this.pictureBox3.Size = new System.Drawing.Size(103, 110);
             this.pictureBox3.TabIndex = 52;
             this.pictureBox3.TabStop = false;
             this.toolTip1.SetToolTip(this.pictureBox3, "Натисни десен бутон за да промениш логото");
@@ -143,12 +143,13 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Font = new System.Drawing.Font("Jura", 12F, System.Drawing.FontStyle.Bold);
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.eDITToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.contextMenuStrip1.ShowImageMargin = false;
-            this.contextMenuStrip1.Size = new System.Drawing.Size(93, 30);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(104, 36);
             // 
             // eDITToolStripMenuItem
             // 
@@ -156,20 +157,20 @@
             this.dEFAULTToolStripMenuItem,
             this.cUSTOMToolStripMenuItem});
             this.eDITToolStripMenuItem.Name = "eDITToolStripMenuItem";
-            this.eDITToolStripMenuItem.Size = new System.Drawing.Size(92, 26);
+            this.eDITToolStripMenuItem.Size = new System.Drawing.Size(103, 32);
             this.eDITToolStripMenuItem.Text = "EDIT";
             // 
             // dEFAULTToolStripMenuItem
             // 
             this.dEFAULTToolStripMenuItem.Name = "dEFAULTToolStripMenuItem";
-            this.dEFAULTToolStripMenuItem.Size = new System.Drawing.Size(151, 26);
+            this.dEFAULTToolStripMenuItem.Size = new System.Drawing.Size(183, 32);
             this.dEFAULTToolStripMenuItem.Text = "DEFAULT";
             this.dEFAULTToolStripMenuItem.Click += new System.EventHandler(this.dEFAULTToolStripMenuItem_Click);
             // 
             // cUSTOMToolStripMenuItem
             // 
             this.cUSTOMToolStripMenuItem.Name = "cUSTOMToolStripMenuItem";
-            this.cUSTOMToolStripMenuItem.Size = new System.Drawing.Size(151, 26);
+            this.cUSTOMToolStripMenuItem.Size = new System.Drawing.Size(183, 32);
             this.cUSTOMToolStripMenuItem.Text = "CUSTOM";
             this.cUSTOMToolStripMenuItem.Click += new System.EventHandler(this.cUSTOMToolStripMenuItem_Click);
             // 
@@ -178,10 +179,10 @@
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(146)))), ((int)(((byte)(164)))));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 548);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 674);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1027, 84);
+            this.pictureBox2.Size = new System.Drawing.Size(1369, 103);
             this.pictureBox2.TabIndex = 51;
             this.pictureBox2.TabStop = false;
             // 
@@ -192,8 +193,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(146)))), ((int)(((byte)(164)))));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1027, 113);
+            this.pictureBox1.Size = new System.Drawing.Size(1369, 139);
             this.pictureBox1.TabIndex = 50;
             this.pictureBox1.TabStop = false;
             // 
@@ -202,9 +204,10 @@
             this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox4.Image = global::SchoolRing.Properties.Resources.Screenshot_54;
-            this.pictureBox4.Location = new System.Drawing.Point(100, 121);
+            this.pictureBox4.Location = new System.Drawing.Point(133, 149);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(825, 337);
+            this.pictureBox4.Size = new System.Drawing.Size(1100, 415);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 57;
             this.pictureBox4.TabStop = false;
@@ -226,9 +229,10 @@
             "СРЯДА",
             "ЧЕТВЪРТЪК",
             "ПЕТЪК"});
-            this.comboBoxDay.Location = new System.Drawing.Point(244, 163);
+            this.comboBoxDay.Location = new System.Drawing.Point(325, 201);
+            this.comboBoxDay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxDay.Name = "comboBoxDay";
-            this.comboBoxDay.Size = new System.Drawing.Size(281, 39);
+            this.comboBoxDay.Size = new System.Drawing.Size(373, 48);
             this.comboBoxDay.TabIndex = 58;
             this.comboBoxDay.SelectedIndexChanged += new System.EventHandler(this.comboBoxDay_SelectedIndexChanged);
             // 
@@ -243,9 +247,10 @@
             this.comboBoxClass.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBoxClass.Font = new System.Drawing.Font("Jura", 16F, System.Drawing.FontStyle.Bold);
             this.comboBoxClass.ForeColor = System.Drawing.Color.White;
-            this.comboBoxClass.Location = new System.Drawing.Point(243, 264);
+            this.comboBoxClass.Location = new System.Drawing.Point(324, 325);
+            this.comboBoxClass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxClass.Name = "comboBoxClass";
-            this.comboBoxClass.Size = new System.Drawing.Size(281, 36);
+            this.comboBoxClass.Size = new System.Drawing.Size(373, 44);
             this.comboBoxClass.TabIndex = 59;
             this.comboBoxClass.SelectedIndexChanged += new System.EventHandler(this.comboBoxClass_SelectedIndexChanged);
             // 
@@ -254,11 +259,12 @@
             this.textBoxClassName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxClassName.Font = new System.Drawing.Font("Jura", 16F, System.Drawing.FontStyle.Bold);
-            this.textBoxClassName.Location = new System.Drawing.Point(243, 367);
+            this.textBoxClassName.Location = new System.Drawing.Point(324, 452);
+            this.textBoxClassName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxClassName.MaxLength = 17;
             this.textBoxClassName.Name = "textBoxClassName";
             this.textBoxClassName.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.textBoxClassName.Size = new System.Drawing.Size(281, 33);
+            this.textBoxClassName.Size = new System.Drawing.Size(373, 39);
             this.textBoxClassName.TabIndex = 60;
             this.textBoxClassName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -272,10 +278,11 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.HorizontalScrollbar = true;
             this.listBox1.IntegralHeight = false;
-            this.listBox1.ItemHeight = 36;
-            this.listBox1.Location = new System.Drawing.Point(556, 163);
+            this.listBox1.ItemHeight = 45;
+            this.listBox1.Location = new System.Drawing.Point(741, 201);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(330, 234);
+            this.listBox1.Size = new System.Drawing.Size(440, 288);
             this.listBox1.TabIndex = 61;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -287,9 +294,10 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Jura", 32F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(108)))), ((int)(((byte)(6)))));
-            this.button1.Location = new System.Drawing.Point(315, 480);
+            this.button1.Location = new System.Drawing.Point(420, 591);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(397, 64);
+            this.button1.Size = new System.Drawing.Size(529, 79);
             this.button1.TabIndex = 62;
             this.button1.Text = "Запази час";
             this.button1.UseVisualStyleBackColor = false;
@@ -304,9 +312,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(189, 451);
+            this.label2.Location = new System.Drawing.Point(252, 555);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(632, 26);
+            this.label2.Size = new System.Drawing.Size(779, 31);
             this.label2.TabIndex = 63;
             this.label2.Text = "Тук можете да въведете персонализирани имена на часове.";
             // 
@@ -318,9 +327,9 @@
             // 
             // CustomClasses
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1027, 631);
+            this.ClientSize = new System.Drawing.Size(1369, 777);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);
@@ -336,6 +345,8 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "CustomClasses";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

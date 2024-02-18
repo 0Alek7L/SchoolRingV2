@@ -1,17 +1,10 @@
 ﻿using SchoolRing.Interfaces;
 using SchoolRing.IO;
-using SchoolRing.Repository;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlTypes;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
-using System.Windows.Documents;
 using System.Windows.Forms;
 
 namespace SchoolRing
@@ -45,6 +38,7 @@ namespace SchoolRing
                 listBoxWednesday.Show();
                 listBoxThursday.Show();
                 listBoxFriday.Show();
+                buttonSaveRecord.Show();
             }
             else
             {
@@ -62,16 +56,8 @@ namespace SchoolRing
                 pictureBox7.Hide();
                 pictureBox8.Hide();
                 labelDOW.Hide();
+                buttonSaveRecord.Hide();
             }
-        }
-
-        private void Timer_TickForMovingLabel(object sender, EventArgs e)
-        {
-            //if(labelTextSuggestion.Right<=panel1.Left)
-            //{
-            //    labelTextSuggestion.Left = panel1.Right;
-            //}
-            //labelTextSuggestion.Left -= 10;
         }
 
         private void ShowMessageForIdiots()
@@ -159,6 +145,8 @@ namespace SchoolRing
                     throw new ArgumentException("Моля, изберете учебна смяна!");
                 if (comboBox1ClassNumber.SelectedIndex == -1 && !isFree)
                     throw new ArgumentException("Моля, изберете час!");
+                if (!comboBoxClassGrade.Enabled && !comboBoxClassParalelka.Enabled && !checkBox1.Checked)
+                    throw new ArgumentException("Този час е с персонализирано име! Моля, сменете статусът му на свободен и след това задайте клас и паралелка.");
                 if (comboBoxClassGrade.SelectedIndex == -1 && !isFree)
                     throw new ArgumentException("Моля, изберете клас!");
                 if (comboBoxClassParalelka.SelectedIndex == -1 && !isFree)
@@ -281,6 +269,7 @@ namespace SchoolRing
 
         private void radioButtonFirst_CheckedChanged(object sender, EventArgs e)
         {
+            buttonSaveRecord.Show();
 
             pictureBox7.Show();
             pictureBox8.Show();
@@ -336,53 +325,29 @@ namespace SchoolRing
 
         private void listBoxMonday_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listBoxMonday.SelectedIndex == 0)
-                listBoxMonday.SelectedIndex = 1;
-            int temp = listBoxMonday.SelectedIndex;
-            if (listBoxTuesday.SelectedItem != null)
-                listBoxTuesday.SelectedIndex = -1;
-            if (listBoxWednesday.SelectedItem != null)
-                listBoxWednesday.SelectedIndex = -1;
-            if (listBoxThursday.SelectedItem != null)
-                listBoxThursday.SelectedIndex = -1;
-            if (listBoxFriday.SelectedItem != null)
-                listBoxFriday.SelectedIndex = -1;
-            listBoxMonday.SelectedIndex = temp;
+            int selectedIndex = listBoxMonday.SelectedIndex;//because sometimes it removes the selection when it disselects others
+            DisselectAllOtherListBoxes(1);
+            if (selectedIndex != 0)
+                listBoxMonday.SelectedIndex = selectedIndex;
             if (list.SelectedIndex != 0 && list.SelectedIndex != -1)
                 FillComboBoxesWithSelectedItemInListBox("ПОНЕДЕЛНИК", listBoxMonday.SelectedIndex);
         }
         private void listBoxTuesday_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listBoxTuesday.SelectedIndex == 0)
-                listBoxTuesday.SelectedIndex = 1;
-            int temp = listBoxTuesday.SelectedIndex;
-            if (listBoxMonday.SelectedItem != null)
-                listBoxMonday.SelectedIndex = -1;
-            if (listBoxWednesday.SelectedItem != null)
-                listBoxWednesday.SelectedIndex = -1;
-            if (listBoxThursday.SelectedItem != null)
-                listBoxThursday.SelectedIndex = -1;
-            if (listBoxFriday.SelectedItem != null)
-                listBoxFriday.SelectedIndex = -1;
-            listBoxTuesday.SelectedIndex = temp;
+            int selectedIndex = listBoxTuesday.SelectedIndex;//because sometimes it removes the selection when it disselects others
+            DisselectAllOtherListBoxes(2);
+            if (selectedIndex != 0)
+                listBoxTuesday.SelectedIndex = selectedIndex;
             if (list.SelectedIndex != 0 && list.SelectedIndex != -1)
                 FillComboBoxesWithSelectedItemInListBox("ВТОРНИК", listBoxTuesday.SelectedIndex);
         }
 
         private void listBoxWednesday_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listBoxWednesday.SelectedIndex == 0)
-                listBoxWednesday.SelectedIndex = 1;
-            int temp = listBoxWednesday.SelectedIndex;
-            if (listBoxMonday.SelectedItem != null)
-                listBoxMonday.SelectedIndex = -1;
-            if (listBoxTuesday.SelectedItem != null)
-                listBoxTuesday.SelectedIndex = -1;
-            if (listBoxThursday.SelectedItem != null)
-                listBoxThursday.SelectedIndex = -1;
-            if (listBoxFriday.SelectedItem != null)
-                listBoxFriday.SelectedIndex = -1;
-            listBoxWednesday.SelectedIndex = temp;
+            int selectedIndex = listBoxWednesday.SelectedIndex;//because sometimes it removes the selection when it disselects others
+            DisselectAllOtherListBoxes(3);
+            if (selectedIndex != 0)
+                listBoxWednesday.SelectedIndex = selectedIndex;
             if (list.SelectedIndex != 0 && list.SelectedIndex != -1)
                 FillComboBoxesWithSelectedItemInListBox("СРЯДА", listBoxWednesday.SelectedIndex);
 
@@ -390,18 +355,10 @@ namespace SchoolRing
 
         private void listBoxThursday_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listBoxThursday.SelectedIndex == 0)
-                listBoxThursday.SelectedIndex = 1;
-            int temp = listBoxThursday.SelectedIndex;
-            if (listBoxMonday.SelectedItem != null)
-                listBoxMonday.SelectedIndex = -1;
-            if (listBoxTuesday.SelectedItem != null)
-                listBoxTuesday.SelectedIndex = -1;
-            if (listBoxWednesday.SelectedItem != null)
-                listBoxWednesday.SelectedIndex = -1;
-            if (listBoxFriday.SelectedItem != null)
-                listBoxFriday.SelectedIndex = -1;
-            listBoxThursday.SelectedIndex = temp;
+            int selectedIndex = listBoxThursday.SelectedIndex;//because sometimes it removes the selection when it disselects others
+            DisselectAllOtherListBoxes(4);
+            if (selectedIndex != 0)
+                listBoxThursday.SelectedIndex = selectedIndex;
             if (list.SelectedIndex != 0 && list.SelectedIndex != -1)
                 FillComboBoxesWithSelectedItemInListBox("ЧЕТВЪРТЪК", listBoxThursday.SelectedIndex);
 
@@ -409,20 +366,50 @@ namespace SchoolRing
 
         private void listBoxFriday_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listBoxFriday.SelectedIndex == 0)
-                listBoxFriday.SelectedIndex = 1;
-            int temp = listBoxFriday.SelectedIndex;
-            if (listBoxMonday.SelectedItem != null)
-                listBoxMonday.SelectedIndex = -1;
-            if (listBoxTuesday.SelectedItem != null)
-                listBoxTuesday.SelectedIndex = -1;
-            if (listBoxWednesday.SelectedItem != null)
-                listBoxWednesday.SelectedIndex = -1;
-            if (listBoxThursday.SelectedItem != null)
-                listBoxThursday.SelectedIndex = -1;
-            listBoxFriday.SelectedIndex = temp;
+            int selectedIndex = listBoxFriday.SelectedIndex;//because sometimes it removes the selection when it disselects others
+            DisselectAllOtherListBoxes(5);
+            if (selectedIndex != 0)
+                listBoxFriday.SelectedIndex = selectedIndex;
             if (list.SelectedIndex != 0 && list.SelectedIndex != -1)
                 FillComboBoxesWithSelectedItemInListBox("ПЕТЪК", listBoxFriday.SelectedIndex);
+        }
+        private void DisselectAllOtherListBoxes(int selectedBox)
+        {
+            if (selectedBox == 1)
+            {
+                if (listBoxMonday.SelectedIndex == 0)
+                    listBoxMonday.SelectedIndex = 1;
+            }
+            else
+                listBoxMonday.ClearSelected();
+            if (selectedBox == 2)
+            {
+                if (listBoxTuesday.SelectedIndex == 0)
+                    listBoxTuesday.SelectedIndex = 1;
+            }
+            else
+                listBoxTuesday.ClearSelected();
+            if (selectedBox == 3)
+            {
+                if (listBoxWednesday.SelectedIndex == 0)
+                    listBoxWednesday.SelectedIndex = 1;
+            }
+            else
+                listBoxWednesday.ClearSelected();
+            if (selectedBox == 4)
+            {
+                if (listBoxThursday.SelectedIndex == 0)
+                    listBoxThursday.SelectedIndex = 1;
+            }
+            else
+                listBoxThursday.ClearSelected();
+            if (selectedBox == 5)
+            {
+                if (listBoxFriday.SelectedIndex == 0)
+                    listBoxFriday.SelectedIndex = 1;
+            }
+            else
+                listBoxFriday.ClearSelected();
         }
 
         private void FillComboBoxesWithSelectedItemInListBox(string day, int num)
@@ -432,39 +419,54 @@ namespace SchoolRing
             comboBoxClassParalelka.SelectedIndex = -1;
             if (!schoolClass.IsFree)
             {
-                int selectedIndexGrade = 0;
-                int selectedIndexParalelka = 0;
-                switch (schoolClass.ClassGrade)
+                if (schoolClass.ClassGrade == 0)
                 {
-                    case 1: selectedIndexGrade = 0; break;
-                    case 2: selectedIndexGrade = 1; break;
-                    case 3: selectedIndexGrade = 2; break;
-                    case 4: selectedIndexGrade = 3; break;
-                    case 5: selectedIndexGrade = 4; break;
-                    case 6: selectedIndexGrade = 5; break;
-                    case 7: selectedIndexGrade = 6; break;
-                    case 8: selectedIndexGrade = 7; break;
-                    case 9: selectedIndexGrade = 8; break;
-                    case 10: selectedIndexGrade = 9; break;
-                    case 11: selectedIndexGrade = 10; break;
-                    case 12: selectedIndexGrade = 11; break;
+                    comboBoxClassGrade.Enabled = false;
+                    comboBoxClassGrade.BackColor = Color.LightGray;
+                    comboBoxClassParalelka.Enabled = false;
+                    comboBoxClassParalelka.BackColor = Color.LightGray;
+                    temp = "Сменете статусът на този час на \"Свободен\" за да редактирате клас и паралелка.";
                 }
-                switch (schoolClass.Paralelka)
+                else
                 {
-                    case "А": selectedIndexParalelka = 0; break;
-                    case "Б": selectedIndexParalelka = 1; break;
-                    case "В": selectedIndexParalelka = 2; break;
-                    case "Г": selectedIndexParalelka = 3; break;
-                    case "Д": selectedIndexParalelka = 4; break;
-                    case "Е": selectedIndexParalelka = 5; break;
-                    case "Ж": selectedIndexParalelka = 6; break;
+                    comboBoxClassGrade.Enabled = true;
+                    comboBoxClassGrade.BackColor = Color.FromArgb(189, 191, 9);
+                    comboBoxClassParalelka.Enabled = true;
+                    comboBoxClassParalelka.BackColor = Color.FromArgb(189, 191, 9);
+                    int selectedIndexGrade = 0;
+                    int selectedIndexParalelka = 0;
+                    switch (schoolClass.ClassGrade)
+                    {
+                        case 1: selectedIndexGrade = 0; break;
+                        case 2: selectedIndexGrade = 1; break;
+                        case 3: selectedIndexGrade = 2; break;
+                        case 4: selectedIndexGrade = 3; break;
+                        case 5: selectedIndexGrade = 4; break;
+                        case 6: selectedIndexGrade = 5; break;
+                        case 7: selectedIndexGrade = 6; break;
+                        case 8: selectedIndexGrade = 7; break;
+                        case 9: selectedIndexGrade = 8; break;
+                        case 10: selectedIndexGrade = 9; break;
+                        case 11: selectedIndexGrade = 10; break;
+                        case 12: selectedIndexGrade = 11; break;
+                    }
+                    switch (schoolClass.Paralelka)
+                    {
+                        case "А": selectedIndexParalelka = 0; break;
+                        case "Б": selectedIndexParalelka = 1; break;
+                        case "В": selectedIndexParalelka = 2; break;
+                        case "Г": selectedIndexParalelka = 3; break;
+                        case "Д": selectedIndexParalelka = 4; break;
+                        case "Е": selectedIndexParalelka = 5; break;
+                        case "Ж": selectedIndexParalelka = 6; break;
+                    }
+                    comboBoxClassGrade.SelectedIndex = selectedIndexGrade;
+                    comboBoxClassParalelka.SelectedIndex = selectedIndexParalelka;
+                    temp = "Изберете клас и паралелка от падащите менюта.";
                 }
-                comboBox1ClassNumber.SelectedIndex = num - 1;
-                comboBoxClassGrade.SelectedIndex = selectedIndexGrade;
-                comboBoxClassParalelka.SelectedIndex = selectedIndexParalelka;
-                checkBox1.Checked = false;
-                temp = "Изберете клас и паралелка от падащите менюта.";
                 labelTextSuggestion.Text = temp;
+                comboBox1ClassNumber.SelectedIndex = num - 1;
+                checkBox1.Checked = false;
             }
             else
             {
@@ -535,46 +537,50 @@ namespace SchoolRing
         {
             if (list == listBoxMonday)
             {
-                listBoxMonday.BackColor = Color.White;
-                listBoxTuesday.BackColor = Color.FromArgb(217, 217, 217);
-                listBoxWednesday.BackColor = Color.FromArgb(217, 217, 217);
-                listBoxThursday.BackColor = Color.FromArgb(217, 217, 217);
-                listBoxFriday.BackColor = Color.FromArgb(217, 217, 217);
+                ChangeColorOfListBox(1);
             }
             else if (list == listBoxTuesday)
             {
-                listBoxTuesday.BackColor = Color.White;
-                listBoxMonday.BackColor = Color.FromArgb(217, 217, 217);
-                listBoxWednesday.BackColor = Color.FromArgb(217, 217, 217);
-                listBoxThursday.BackColor = Color.FromArgb(217, 217, 217);
-                listBoxFriday.BackColor = Color.FromArgb(217, 217, 217);
+                ChangeColorOfListBox(2);
             }
             else if (list == listBoxWednesday)
             {
-                listBoxWednesday.BackColor = Color.White;
-                listBoxTuesday.BackColor = Color.FromArgb(217, 217, 217);
-                listBoxMonday.BackColor = Color.FromArgb(217, 217, 217);
-                listBoxThursday.BackColor = Color.FromArgb(217, 217, 217);
-                listBoxFriday.BackColor = Color.FromArgb(217, 217, 217);
+                ChangeColorOfListBox(3);
             }
             else if (list == listBoxThursday)
             {
-                listBoxThursday.BackColor = Color.White;
-                listBoxTuesday.BackColor = Color.FromArgb(217, 217, 217);
-                listBoxWednesday.BackColor = Color.FromArgb(217, 217, 217);
-                listBoxMonday.BackColor = Color.FromArgb(217, 217, 217);
-                listBoxFriday.BackColor = Color.FromArgb(217, 217, 217);
+                ChangeColorOfListBox(4);
             }
             if (list == listBoxFriday)
             {
-                listBoxFriday.BackColor = Color.White;
-                listBoxTuesday.BackColor = Color.FromArgb(217, 217, 217);
-                listBoxWednesday.BackColor = Color.FromArgb(217, 217, 217);
-                listBoxThursday.BackColor = Color.FromArgb(217, 217, 217);
-                listBoxMonday.BackColor = Color.FromArgb(217, 217, 217);
+                ChangeColorOfListBox(5);
             }
         }
+        private void ChangeColorOfListBox(int whiteListBox)
+        {
+            if (whiteListBox == 1)
+                listBoxMonday.BackColor = Color.White;
+            else
+                listBoxMonday.BackColor = Color.FromArgb(217, 217, 217);
+            if (whiteListBox == 2)
+                listBoxTuesday.BackColor = Color.White;
+            else
+                listBoxTuesday.BackColor = Color.FromArgb(217, 217, 217);
+            if (whiteListBox == 3)
+                listBoxWednesday.BackColor = Color.White;
+            else
+                listBoxWednesday.BackColor = Color.FromArgb(217, 217, 217);
+            if (whiteListBox == 4)
+                listBoxThursday.BackColor = Color.White;
+            else
+                listBoxThursday.BackColor = Color.FromArgb(217, 217, 217);
+            if (whiteListBox == 5)
+                listBoxFriday.BackColor = Color.White;
+            else
+                listBoxFriday.BackColor = Color.FromArgb(217, 217, 217);
 
+
+        }
         private void buttonContinueToMainMenu_Click(object sender, EventArgs e)
         {
             Program.WithClassSchedule = true;
@@ -678,7 +684,7 @@ namespace SchoolRing
                 else
                     temp = "Натиснете на листа с часовете за съответния ден, за който искате да попълните разписание.";
                 labelTextSuggestion.Text = temp;
-                
+
                 isFree = false;
                 comboBoxClassGrade.Enabled = true;
                 comboBoxClassGrade.BackColor = Color.FromArgb(189, 191, 9);

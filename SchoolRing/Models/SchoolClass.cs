@@ -1,14 +1,7 @@
-﻿using Microsoft.Office.Interop.Excel;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using SchoolRing.Interfaces;
-using SchoolRing.IO;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Runtime.Remoting.Messaging;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SchoolRing
 {
@@ -220,7 +213,7 @@ namespace SchoolRing
                 {
                     if (classGrade == 0 && !IsFree)
                         return $"{Paralelka}";
-                    else 
+                    else
                         return ClassGrade + Paralelka;
                 }
                 else

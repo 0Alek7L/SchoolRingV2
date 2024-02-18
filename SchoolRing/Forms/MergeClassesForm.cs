@@ -2,12 +2,9 @@
 using SchoolRing.IO;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SchoolRing
@@ -121,7 +118,7 @@ namespace SchoolRing
                             listBox1.ClearSelected();
                             int index = listBox1.Items.IndexOf(item);
                             listBox1.SetSelected(index, true);
-                            listBox1.SetSelected(index+1, true);
+                            listBox1.SetSelected(index + 1, true);
                             break;
                         }
                     }
@@ -150,7 +147,7 @@ namespace SchoolRing
                     throw new ArgumentException("Моля изберете часове за сливане!");
                 else if (selectedMergedClass.MergedWith == selectedMergingClass.SaveMergingReference() && selectedMergingClass.MergedWith == selectedMergedClass.SaveMergingReference())
                 {
-                    DialogResult ThereIsAlreadyASchedule = System.Windows.Forms.MessageBox.Show("Тези часове са вече сляти! Желаете ли да ги разделите на 2 отделни?", "Предупреждение", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    DialogResult ThereIsAlreadyASchedule = System.Windows.Forms.MessageBox.Show("Тези часове са вече слети! Желаете ли да ги разделите на 2 отделни?", "Предупреждение", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                     if (ThereIsAlreadyASchedule == DialogResult.Yes)
                     {
                         selectedMergingClass.ResetMergeStatus();

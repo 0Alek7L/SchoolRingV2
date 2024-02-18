@@ -96,9 +96,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            pictureBox5.Location = new System.Drawing.Point(0, 113);
+            pictureBox5.Location = new System.Drawing.Point(0, 139);
+            pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new System.Drawing.Size(75, 66);
+            pictureBox5.Size = new System.Drawing.Size(100, 81);
             pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 75;
             pictureBox5.TabStop = false;
@@ -114,10 +115,10 @@
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox3.ContextMenuStrip = this.contextMenuStrip1;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox3.Location = new System.Drawing.Point(473, 7);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Location = new System.Drawing.Point(631, 9);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(77, 89);
+            this.pictureBox3.Size = new System.Drawing.Size(103, 110);
             this.pictureBox3.TabIndex = 73;
             this.pictureBox3.TabStop = false;
             this.toolTip1.SetToolTip(this.pictureBox3, "Натисни десен бутон за да промениш логото");
@@ -131,7 +132,7 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.contextMenuStrip1.ShowImageMargin = false;
-            this.contextMenuStrip1.Size = new System.Drawing.Size(93, 30);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(104, 36);
             // 
             // eDITToolStripMenuItem
             // 
@@ -139,20 +140,20 @@
             this.dEFAULTToolStripMenuItem,
             this.cUSTOMToolStripMenuItem});
             this.eDITToolStripMenuItem.Name = "eDITToolStripMenuItem";
-            this.eDITToolStripMenuItem.Size = new System.Drawing.Size(92, 26);
+            this.eDITToolStripMenuItem.Size = new System.Drawing.Size(103, 32);
             this.eDITToolStripMenuItem.Text = "EDIT";
             // 
             // dEFAULTToolStripMenuItem
             // 
             this.dEFAULTToolStripMenuItem.Name = "dEFAULTToolStripMenuItem";
-            this.dEFAULTToolStripMenuItem.Size = new System.Drawing.Size(151, 26);
+            this.dEFAULTToolStripMenuItem.Size = new System.Drawing.Size(183, 32);
             this.dEFAULTToolStripMenuItem.Text = "DEFAULT";
             this.dEFAULTToolStripMenuItem.Click += new System.EventHandler(this.dEFAULTToolStripMenuItem_Click);
             // 
             // cUSTOMToolStripMenuItem
             // 
             this.cUSTOMToolStripMenuItem.Name = "cUSTOMToolStripMenuItem";
-            this.cUSTOMToolStripMenuItem.Size = new System.Drawing.Size(151, 26);
+            this.cUSTOMToolStripMenuItem.Size = new System.Drawing.Size(183, 32);
             this.cUSTOMToolStripMenuItem.Text = "CUSTOM";
             this.cUSTOMToolStripMenuItem.Click += new System.EventHandler(this.cUSTOMToolStripMenuItem_Click);
             // 
@@ -163,8 +164,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(146)))), ((int)(((byte)(164)))));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1027, 113);
+            this.pictureBox1.Size = new System.Drawing.Size(1369, 139);
             this.pictureBox1.TabIndex = 71;
             this.pictureBox1.TabStop = false;
             // 
@@ -177,10 +179,9 @@
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Jura", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(239)))), ((int)(((byte)(237)))));
-            this.label1.Location = new System.Drawing.Point(14, 595);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(19, 732);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 22);
+            this.label1.Size = new System.Drawing.Size(80, 27);
             this.label1.TabIndex = 77;
             this.label1.Text = "ПОМОЩ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -193,9 +194,10 @@
             this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(146)))), ((int)(((byte)(164)))));
             this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Image = global::SchoolRing.Properties.Resources.system_solid_140_help_center;
-            this.pictureBox6.Location = new System.Drawing.Point(12, 547);
+            this.pictureBox6.Location = new System.Drawing.Point(16, 673);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(63, 50);
+            this.pictureBox6.Size = new System.Drawing.Size(84, 62);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 76;
             this.pictureBox6.TabStop = false;
@@ -209,10 +211,9 @@
             this.labelDayOfWeek.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelDayOfWeek.Font = new System.Drawing.Font("Jura", 37F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDayOfWeek.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(239)))), ((int)(((byte)(237)))));
-            this.labelDayOfWeek.Location = new System.Drawing.Point(239, 549);
-            this.labelDayOfWeek.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDayOfWeek.Location = new System.Drawing.Point(319, 676);
             this.labelDayOfWeek.Name = "labelDayOfWeek";
-            this.labelDayOfWeek.Size = new System.Drawing.Size(544, 71);
+            this.labelDayOfWeek.Size = new System.Drawing.Size(725, 87);
             this.labelDayOfWeek.TabIndex = 74;
             this.labelDayOfWeek.Text = "dayOfWeek";
             this.labelDayOfWeek.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -222,10 +223,10 @@
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(146)))), ((int)(((byte)(164)))));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 547);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 673);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1027, 84);
+            this.pictureBox2.Size = new System.Drawing.Size(1369, 103);
             this.pictureBox2.TabIndex = 72;
             this.pictureBox2.TabStop = false;
             // 
@@ -237,9 +238,10 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(146)))), ((int)(((byte)(164)))));
             this.label3.Font = new System.Drawing.Font("Jura", 25F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(75, 293);
+            this.label3.Location = new System.Drawing.Point(100, 361);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 45);
+            this.label3.Size = new System.Drawing.Size(116, 56);
             this.label3.TabIndex = 80;
             this.label3.Text = "ДЕН:";
             // 
@@ -251,9 +253,10 @@
             this.labelClass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(146)))), ((int)(((byte)(164)))));
             this.labelClass.Font = new System.Drawing.Font("Jura", 25F, System.Drawing.FontStyle.Bold);
             this.labelClass.ForeColor = System.Drawing.Color.White;
-            this.labelClass.Location = new System.Drawing.Point(412, 293);
+            this.labelClass.Location = new System.Drawing.Point(549, 361);
+            this.labelClass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelClass.Name = "labelClass";
-            this.labelClass.Size = new System.Drawing.Size(93, 45);
+            this.labelClass.Size = new System.Drawing.Size(114, 56);
             this.labelClass.TabIndex = 82;
             this.labelClass.Text = "ЧАС:";
             // 
@@ -267,10 +270,11 @@
             this.listBoxClasses.FormattingEnabled = true;
             this.listBoxClasses.HorizontalScrollbar = true;
             this.listBoxClasses.IntegralHeight = false;
-            this.listBoxClasses.ItemHeight = 36;
-            this.listBoxClasses.Location = new System.Drawing.Point(506, 229);
+            this.listBoxClasses.ItemHeight = 45;
+            this.listBoxClasses.Location = new System.Drawing.Point(675, 282);
+            this.listBoxClasses.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBoxClasses.Name = "listBoxClasses";
-            this.listBoxClasses.Size = new System.Drawing.Size(424, 162);
+            this.listBoxClasses.Size = new System.Drawing.Size(565, 199);
             this.listBoxClasses.TabIndex = 83;
             this.listBoxClasses.SelectedIndexChanged += new System.EventHandler(this.listBoxClasses_SelectedIndexChanged);
             // 
@@ -282,9 +286,10 @@
             this.buttonWriteNewNote.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonWriteNewNote.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonWriteNewNote.Font = new System.Drawing.Font("Jura", 32F, System.Drawing.FontStyle.Bold);
-            this.buttonWriteNewNote.Location = new System.Drawing.Point(515, 427);
+            this.buttonWriteNewNote.Location = new System.Drawing.Point(687, 526);
+            this.buttonWriteNewNote.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonWriteNewNote.Name = "buttonWriteNewNote";
-            this.buttonWriteNewNote.Size = new System.Drawing.Size(424, 64);
+            this.buttonWriteNewNote.Size = new System.Drawing.Size(565, 79);
             this.buttonWriteNewNote.TabIndex = 84;
             this.buttonWriteNewNote.Text = "->ПИСАНЕ<-";
             this.buttonWriteNewNote.UseVisualStyleBackColor = false;
@@ -299,7 +304,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.monthCalendar1.BackColor = System.Drawing.SystemColors.Window;
             this.monthCalendar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.monthCalendar1.Location = new System.Drawing.Point(173, 229);
+            this.monthCalendar1.Location = new System.Drawing.Point(231, 282);
+            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(12, 11, 12, 11);
             this.monthCalendar1.MaxSelectionCount = 1;
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 85;
@@ -318,9 +324,10 @@
             this.panelWrite.Controls.Add(this.textBox1);
             this.panelWrite.Controls.Add(this.label2);
             this.panelWrite.Controls.Add(this.pictureBox8);
-            this.panelWrite.Location = new System.Drawing.Point(0, 113);
+            this.panelWrite.Location = new System.Drawing.Point(0, 139);
+            this.panelWrite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelWrite.Name = "panelWrite";
-            this.panelWrite.Size = new System.Drawing.Size(1027, 433);
+            this.panelWrite.Size = new System.Drawing.Size(1369, 533);
             this.panelWrite.TabIndex = 86;
             this.panelWrite.Visible = false;
             // 
@@ -329,9 +336,10 @@
             this.pictureBoxEnlargeTextSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(146)))), ((int)(((byte)(164)))));
             this.pictureBoxEnlargeTextSize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxEnlargeTextSize.Image = global::SchoolRing.Properties.Resources.plus_sign;
-            this.pictureBoxEnlargeTextSize.Location = new System.Drawing.Point(708, 364);
+            this.pictureBoxEnlargeTextSize.Location = new System.Drawing.Point(944, 448);
+            this.pictureBoxEnlargeTextSize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxEnlargeTextSize.Name = "pictureBoxEnlargeTextSize";
-            this.pictureBoxEnlargeTextSize.Size = new System.Drawing.Size(45, 33);
+            this.pictureBoxEnlargeTextSize.Size = new System.Drawing.Size(60, 41);
             this.pictureBoxEnlargeTextSize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxEnlargeTextSize.TabIndex = 93;
             this.pictureBoxEnlargeTextSize.TabStop = false;
@@ -343,9 +351,10 @@
             this.pictureBoxLowerTextSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(146)))), ((int)(((byte)(164)))));
             this.pictureBoxLowerTextSize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxLowerTextSize.Image = global::SchoolRing.Properties.Resources.minus;
-            this.pictureBoxLowerTextSize.Location = new System.Drawing.Point(658, 364);
+            this.pictureBoxLowerTextSize.Location = new System.Drawing.Point(877, 448);
+            this.pictureBoxLowerTextSize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxLowerTextSize.Name = "pictureBoxLowerTextSize";
-            this.pictureBoxLowerTextSize.Size = new System.Drawing.Size(46, 33);
+            this.pictureBoxLowerTextSize.Size = new System.Drawing.Size(61, 41);
             this.pictureBoxLowerTextSize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxLowerTextSize.TabIndex = 92;
             this.pictureBoxLowerTextSize.TabStop = false;
@@ -357,13 +366,14 @@
             this.pictureBoxSaveNote.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBoxSaveNote.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxSaveNote.Image = global::SchoolRing.Properties.Resources._checked;
-            this.pictureBoxSaveNote.Location = new System.Drawing.Point(923, 231);
+            this.pictureBoxSaveNote.Location = new System.Drawing.Point(1231, 284);
+            this.pictureBoxSaveNote.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxSaveNote.Name = "pictureBoxSaveNote";
-            this.pictureBoxSaveNote.Size = new System.Drawing.Size(84, 82);
+            this.pictureBoxSaveNote.Size = new System.Drawing.Size(112, 101);
             this.pictureBoxSaveNote.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxSaveNote.TabIndex = 91;
             this.pictureBoxSaveNote.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBoxSaveNote, "Запазване");
+            this.toolTip1.SetToolTip(this.pictureBoxSaveNote, "Запази");
             this.pictureBoxSaveNote.Click += new System.EventHandler(this.pictureBoxSaveNote_Click);
             // 
             // pictureBoxDeleteNote
@@ -371,13 +381,14 @@
             this.pictureBoxDeleteNote.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBoxDeleteNote.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxDeleteNote.Image = global::SchoolRing.Properties.Resources.trash;
-            this.pictureBoxDeleteNote.Location = new System.Drawing.Point(917, 125);
+            this.pictureBoxDeleteNote.Location = new System.Drawing.Point(1223, 154);
+            this.pictureBoxDeleteNote.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxDeleteNote.Name = "pictureBoxDeleteNote";
-            this.pictureBoxDeleteNote.Size = new System.Drawing.Size(84, 82);
+            this.pictureBoxDeleteNote.Size = new System.Drawing.Size(112, 101);
             this.pictureBoxDeleteNote.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxDeleteNote.TabIndex = 90;
             this.pictureBoxDeleteNote.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBoxDeleteNote, "Изтриване");
+            this.toolTip1.SetToolTip(this.pictureBoxDeleteNote, "Изтрий");
             this.pictureBoxDeleteNote.Click += new System.EventHandler(this.pictureBoxDeleteNote_Click);
             // 
             // labelClassName
@@ -385,9 +396,10 @@
             this.labelClassName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(146)))), ((int)(((byte)(164)))));
             this.labelClassName.Font = new System.Drawing.Font("Jura", 18F, System.Drawing.FontStyle.Bold);
             this.labelClassName.ForeColor = System.Drawing.Color.White;
-            this.labelClassName.Location = new System.Drawing.Point(139, 44);
+            this.labelClassName.Location = new System.Drawing.Point(185, 54);
+            this.labelClassName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelClassName.Name = "labelClassName";
-            this.labelClassName.Size = new System.Drawing.Size(746, 41);
+            this.labelClassName.Size = new System.Drawing.Size(995, 50);
             this.labelClassName.TabIndex = 89;
             this.labelClassName.Text = "ИМЕ";
             this.labelClassName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -395,21 +407,23 @@
             // textBoxNote
             // 
             this.textBoxNote.Font = new System.Drawing.Font("Jura Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNote.Location = new System.Drawing.Point(124, 96);
+            this.textBoxNote.Location = new System.Drawing.Point(165, 118);
+            this.textBoxNote.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxNote.MaxLength = 1073741823;
             this.textBoxNote.Multiline = true;
             this.textBoxNote.Name = "textBoxNote";
-            this.textBoxNote.Size = new System.Drawing.Size(776, 265);
+            this.textBoxNote.Size = new System.Drawing.Size(1033, 325);
             this.textBoxNote.TabIndex = 88;
             this.textBoxNote.TextChanged += new System.EventHandler(this.textBoxNote_TextChanged);
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(573, 366);
+            this.textBox1.Location = new System.Drawing.Point(764, 450);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.MaxLength = 2;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(79, 29);
+            this.textBox1.Size = new System.Drawing.Size(104, 34);
             this.textBox1.TabIndex = 86;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -420,18 +434,20 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(146)))), ((int)(((byte)(164)))));
             this.label2.Font = new System.Drawing.Font("Jura", 16F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(367, 364);
+            this.label2.Location = new System.Drawing.Point(489, 448);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(218, 29);
+            this.label2.Size = new System.Drawing.Size(265, 36);
             this.label2.TabIndex = 87;
             this.label2.Text = "РАЗМЕР НА ШРИФТ: ";
             // 
             // pictureBox8
             // 
             this.pictureBox8.Image = global::SchoolRing.Properties.Resources.Screenshot_56;
-            this.pictureBox8.Location = new System.Drawing.Point(124, 32);
+            this.pictureBox8.Location = new System.Drawing.Point(165, 39);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(776, 371);
+            this.pictureBox8.Size = new System.Drawing.Size(1035, 457);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 84;
             this.pictureBox8.TabStop = false;
@@ -441,9 +457,10 @@
             this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox4.Image = global::SchoolRing.Properties.Resources.Screenshot_56;
-            this.pictureBox4.Location = new System.Drawing.Point(47, 178);
+            this.pictureBox4.Location = new System.Drawing.Point(63, 219);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(926, 342);
+            this.pictureBox4.Size = new System.Drawing.Size(1235, 421);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 87;
             this.pictureBox4.TabStop = false;
@@ -455,11 +472,11 @@
             this.labelShowFirstDateAndTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(146)))), ((int)(((byte)(164)))));
             this.labelShowFirstDateAndTime.Font = new System.Drawing.Font("Jura", 18F, System.Drawing.FontStyle.Bold);
             this.labelShowFirstDateAndTime.ForeColor = System.Drawing.Color.White;
-            this.labelShowFirstDateAndTime.Location = new System.Drawing.Point(506, 185);
+            this.labelShowFirstDateAndTime.Location = new System.Drawing.Point(675, 228);
+            this.labelShowFirstDateAndTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelShowFirstDateAndTime.Name = "labelShowFirstDateAndTime";
-            this.labelShowFirstDateAndTime.Size = new System.Drawing.Size(424, 41);
+            this.labelShowFirstDateAndTime.Size = new System.Drawing.Size(565, 50);
             this.labelShowFirstDateAndTime.TabIndex = 90;
-            this.labelShowFirstDateAndTime.Text = "ИМЕ";
             this.labelShowFirstDateAndTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // buttonSearch
@@ -470,9 +487,10 @@
             this.buttonSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSearch.Font = new System.Drawing.Font("Jura", 32F, System.Drawing.FontStyle.Bold);
-            this.buttonSearch.Location = new System.Drawing.Point(85, 427);
+            this.buttonSearch.Location = new System.Drawing.Point(113, 526);
+            this.buttonSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(424, 64);
+            this.buttonSearch.Size = new System.Drawing.Size(565, 79);
             this.buttonSearch.TabIndex = 91;
             this.buttonSearch.Text = "->ТЪРСЕНЕ<-";
             this.buttonSearch.UseVisualStyleBackColor = false;
@@ -492,9 +510,10 @@
             this.panelSearch.Controls.Add(this.pictureBox7);
             this.panelSearch.Controls.Add(this.pictureBox9);
             this.panelSearch.Controls.Add(this.pictureBox11);
-            this.panelSearch.Location = new System.Drawing.Point(0, 111);
+            this.panelSearch.Location = new System.Drawing.Point(0, 139);
+            this.panelSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelSearch.Name = "panelSearch";
-            this.panelSearch.Size = new System.Drawing.Size(1027, 433);
+            this.panelSearch.Size = new System.Drawing.Size(1369, 533);
             this.panelSearch.TabIndex = 92;
             this.panelSearch.Visible = false;
             // 
@@ -503,9 +522,10 @@
             this.radioButtonContent.AutoSize = true;
             this.radioButtonContent.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButtonContent.Font = new System.Drawing.Font("Jura", 17F, System.Drawing.FontStyle.Bold);
-            this.radioButtonContent.Location = new System.Drawing.Point(544, 12);
+            this.radioButtonContent.Location = new System.Drawing.Point(725, 15);
+            this.radioButtonContent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButtonContent.Name = "radioButtonContent";
-            this.radioButtonContent.Size = new System.Drawing.Size(182, 34);
+            this.radioButtonContent.Size = new System.Drawing.Size(227, 43);
             this.radioButtonContent.TabIndex = 93;
             this.radioButtonContent.Text = "Съдържание";
             this.radioButtonContent.UseVisualStyleBackColor = true;
@@ -516,9 +536,10 @@
             this.radioButtonClassOrParalelka.AutoSize = true;
             this.radioButtonClassOrParalelka.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButtonClassOrParalelka.Font = new System.Drawing.Font("Jura", 17F, System.Drawing.FontStyle.Bold);
-            this.radioButtonClassOrParalelka.Location = new System.Drawing.Point(297, 12);
+            this.radioButtonClassOrParalelka.Location = new System.Drawing.Point(396, 15);
+            this.radioButtonClassOrParalelka.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButtonClassOrParalelka.Name = "radioButtonClassOrParalelka";
-            this.radioButtonClassOrParalelka.Size = new System.Drawing.Size(223, 34);
+            this.radioButtonClassOrParalelka.Size = new System.Drawing.Size(280, 43);
             this.radioButtonClassOrParalelka.TabIndex = 92;
             this.radioButtonClassOrParalelka.Text = "Клас/Паралелка";
             this.radioButtonClassOrParalelka.UseVisualStyleBackColor = true;
@@ -528,9 +549,10 @@
             // 
             this.pictureBoxEditSearchNote.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxEditSearchNote.Image = global::SchoolRing.Properties.Resources.edit__1_;
-            this.pictureBoxEditSearchNote.Location = new System.Drawing.Point(912, 198);
+            this.pictureBoxEditSearchNote.Location = new System.Drawing.Point(1216, 244);
+            this.pictureBoxEditSearchNote.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxEditSearchNote.Name = "pictureBoxEditSearchNote";
-            this.pictureBoxEditSearchNote.Size = new System.Drawing.Size(107, 109);
+            this.pictureBoxEditSearchNote.Size = new System.Drawing.Size(143, 134);
             this.pictureBoxEditSearchNote.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxEditSearchNote.TabIndex = 91;
             this.pictureBoxEditSearchNote.TabStop = false;
@@ -547,10 +569,11 @@
             this.listBoxShowSearch.FormattingEnabled = true;
             this.listBoxShowSearch.HorizontalScrollbar = true;
             this.listBoxShowSearch.IntegralHeight = false;
-            this.listBoxShowSearch.ItemHeight = 36;
-            this.listBoxShowSearch.Location = new System.Drawing.Point(129, 163);
+            this.listBoxShowSearch.ItemHeight = 44;
+            this.listBoxShowSearch.Location = new System.Drawing.Point(172, 201);
+            this.listBoxShowSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBoxShowSearch.Name = "listBoxShowSearch";
-            this.listBoxShowSearch.Size = new System.Drawing.Size(764, 238);
+            this.listBoxShowSearch.Size = new System.Drawing.Size(1019, 293);
             this.listBoxShowSearch.TabIndex = 90;
             this.listBoxShowSearch.SelectedIndexChanged += new System.EventHandler(this.listBoxShowSearch_SelectedIndexChanged);
             // 
@@ -559,10 +582,11 @@
             this.textBoxSearchInput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(239)))), ((int)(((byte)(237)))));
             this.textBoxSearchInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxSearchInput.Font = new System.Drawing.Font("Jura SemiBold", 25F);
-            this.textBoxSearchInput.Location = new System.Drawing.Point(151, 73);
+            this.textBoxSearchInput.Location = new System.Drawing.Point(201, 90);
+            this.textBoxSearchInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxSearchInput.MaxLength = 100;
             this.textBoxSearchInput.Name = "textBoxSearchInput";
-            this.textBoxSearchInput.Size = new System.Drawing.Size(634, 40);
+            this.textBoxSearchInput.Size = new System.Drawing.Size(845, 50);
             this.textBoxSearchInput.TabIndex = 89;
             this.textBoxSearchInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBoxSearchInput.TextChanged += new System.EventHandler(this.textBoxSearchInput_TextChanged);
@@ -570,9 +594,10 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::SchoolRing.Properties.Resources.Screenshot_49;
-            this.pictureBox7.Location = new System.Drawing.Point(106, 144);
+            this.pictureBox7.Location = new System.Drawing.Point(141, 177);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(805, 274);
+            this.pictureBox7.Size = new System.Drawing.Size(1073, 337);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 88;
             this.pictureBox7.TabStop = false;
@@ -580,9 +605,10 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::SchoolRing.Properties.Resources.Screenshot_48;
-            this.pictureBox9.Location = new System.Drawing.Point(116, 57);
+            this.pictureBox9.Location = new System.Drawing.Point(155, 70);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(791, 75);
+            this.pictureBox9.Size = new System.Drawing.Size(1055, 92);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 86;
             this.pictureBox9.TabStop = false;
@@ -591,9 +617,10 @@
             // 
             this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox11.Image = global::SchoolRing.Properties.Resources.system_solid_29_cross;
-            this.pictureBox11.Location = new System.Drawing.Point(958, 3);
+            this.pictureBox11.Location = new System.Drawing.Point(1277, 4);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(66, 63);
+            this.pictureBox11.Size = new System.Drawing.Size(88, 78);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 85;
             this.pictureBox11.TabStop = false;
@@ -608,9 +635,9 @@
             // 
             // Notes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1027, 631);
+            this.ClientSize = new System.Drawing.Size(1369, 777);
             this.Controls.Add(this.panelSearch);
             this.Controls.Add(this.panelWrite);
             this.Controls.Add(this.monthCalendar1);
@@ -629,6 +656,8 @@
             this.Controls.Add(this.buttonSearch);
             this.Controls.Add(this.pictureBox4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "Notes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

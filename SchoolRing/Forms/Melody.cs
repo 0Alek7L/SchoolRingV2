@@ -1,16 +1,9 @@
-﻿using SchoolRing.Interfaces;
-using SchoolRing.IO;
+﻿using SchoolRing.IO;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Media.Media3D;
 
 namespace SchoolRing
 {
@@ -70,12 +63,12 @@ namespace SchoolRing
             if (Program.melodyForStartOfClassPath != null)
             {
                 labelStartClassMelodyName.Text = Path.GetFileName(Program.melodyForStartOfClassPath);
-                labelStartClassMelodyName.ForeColor= Color.Black;
+                labelStartClassMelodyName.ForeColor = Color.Black;
             }
             else
             {
                 labelStartClassMelodyName.Text = "НЯМА ИЗБРАН ФАЙЛ!";
-                labelStartClassMelodyName.ForeColor= Color.Red;
+                labelStartClassMelodyName.ForeColor = Color.Red;
             }
             if (Program.melodyForEndOfClassPath != null)
             {
@@ -322,15 +315,15 @@ namespace SchoolRing
             }
         }
 
-        private void pictureBoxHelpWithFixedMelodyLength_MouseEnter(object sender, EventArgs e)=>
-            pictureBoxHelpWithFixedMelodyLength.BorderStyle= BorderStyle.Fixed3D;
+        private void pictureBoxHelpWithFixedMelodyLength_MouseEnter(object sender, EventArgs e) =>
+            pictureBoxHelpWithFixedMelodyLength.BorderStyle = BorderStyle.Fixed3D;
 
-        private void pictureBoxHelpWithFixedMelodyLength_MouseLeave(object sender, EventArgs e)=>
-            pictureBoxHelpWithFixedMelodyLength.BorderStyle= BorderStyle.FixedSingle;
+        private void pictureBoxHelpWithFixedMelodyLength_MouseLeave(object sender, EventArgs e) =>
+            pictureBoxHelpWithFixedMelodyLength.BorderStyle = BorderStyle.FixedSingle;
 
         private void pictureBoxHelpWithFixedMelodyLength_Click(object sender, EventArgs e)
         {
-            pictureBoxHelpWithFixedMelodyLength.BorderStyle= BorderStyle.FixedSingle;
+            pictureBoxHelpWithFixedMelodyLength.BorderStyle = BorderStyle.FixedSingle;
             if (Program.fixedMelodyLength == 0)
                 MessageBox.Show("В момента няма ограничение на времето за звънене.");
             else
@@ -348,6 +341,111 @@ namespace SchoolRing
         {
             Program.ChoosePathForCustomIcon(contextMenuStrip1);
             Program.ChangeCustomIcon(pictureBox3, true);
+        }
+
+        private void pictureBoxSavedMusicStart_MouseEnter(object sender, EventArgs e) =>
+            pictureBoxSavedMusicStart.BorderStyle = BorderStyle.FixedSingle;
+
+        private void pictureBoxSavedMusicStart_MouseLeave(object sender, EventArgs e) =>
+            pictureBoxSavedMusicStart.BorderStyle = BorderStyle.None;
+        bool TrueForStrarClassAndFalseForEndClassMusic;
+        private void pictureBoxSavedMusicStart_Click(object sender, EventArgs e)
+        {
+            TrueForStrarClassAndFalseForEndClassMusic = true;
+            panelDefaultMusic.Show();
+            CheckRadioButtonsIfNeeded();
+            pictureBoxSavedMusicStart.Hide();
+            pictureBoxSavedMusicEnd.Hide();
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            panelDefaultMusic.Hide();
+            pictureBoxSavedMusicEnd.Show();
+            pictureBoxSavedMusicStart.Show();
+        }
+        private void CheckRadioButtonsIfNeeded()
+        {
+            try
+            {
+                if (TrueForStrarClassAndFalseForEndClassMusic)
+                {
+                    if (Program.melodyForStartOfClassPath == filePathForMelody1)
+                        radioButtonMelody1.Checked = true;
+                    else if (Program.melodyForStartOfClassPath == filePathForMelody2)
+                        radioButtonMelody2.Checked = true;
+                    else if (Program.melodyForStartOfClassPath == filePathForMelody3)
+                        radioButtonMelody3.Checked = true;
+                    else
+                    {
+                        radioButtonMelody1.Checked = false;
+                        radioButtonMelody2.Checked = false;
+                        radioButtonMelody3.Checked = false;
+                    }
+                }
+                else
+                {
+                    if (Program.melodyForEndOfClassPath == filePathForMelody1)
+                        radioButtonMelody1.Checked = true;
+                    else if (Program.melodyForEndOfClassPath == filePathForMelody2)
+                        radioButtonMelody2.Checked = true;
+                    else if (Program.melodyForEndOfClassPath == filePathForMelody3)
+                        radioButtonMelody3.Checked = true;
+                    else
+                    {
+                        radioButtonMelody1.Checked = false;
+                        radioButtonMelody2.Checked = false;
+                        radioButtonMelody3.Checked = false;
+                    }
+                }
+            }
+            catch
+            {
+
+            }
+        }
+        private void pictureBox12_MouseEnter(object sender, EventArgs e) =>
+            pictureBoxSavedMusicEnd.BorderStyle = BorderStyle.FixedSingle;
+
+        private void pictureBox12_MouseLeave(object sender, EventArgs e) =>
+            pictureBoxSavedMusicEnd.BorderStyle = BorderStyle.None;
+
+        private void pictureBoxSavedMusicEnd_Click(object sender, EventArgs e)
+        {
+            TrueForStrarClassAndFalseForEndClassMusic = false;
+            panelDefaultMusic.Show();
+            CheckRadioButtonsIfNeeded();
+            pictureBoxSavedMusicStart.Hide();
+            pictureBoxSavedMusicEnd.Hide();
+        }
+
+        const string filePathForMelody1 = @"Included sounds\Melody 1.mp3";
+        const string filePathForMelody2 = @"Included sounds\Melody 2.mp3";
+        const string filePathForMelody3 = @"Included sounds\Melody 3.mp3";
+
+        private void radioButtonMelody1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButtonMelody1.Checked)
+            {
+                if (TrueForStrarClassAndFalseForEndClassMusic)
+                    Program.melodyForStartOfClassPath = filePathForMelody1;
+                else
+                    Program.melodyForEndOfClassPath = filePathForMelody1;
+            }
+            else if (radioButtonMelody2.Checked)
+            {
+                if (TrueForStrarClassAndFalseForEndClassMusic)
+                    Program.melodyForStartOfClassPath = filePathForMelody2;
+                else
+                    Program.melodyForEndOfClassPath = filePathForMelody2;
+            }
+            else if (radioButtonMelody3.Checked)
+            {
+                if (TrueForStrarClassAndFalseForEndClassMusic)
+                    Program.melodyForStartOfClassPath = filePathForMelody3;
+                else
+                    Program.melodyForEndOfClassPath = filePathForMelody3;
+            }
         }
     }
 }

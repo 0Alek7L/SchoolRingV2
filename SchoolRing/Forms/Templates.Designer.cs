@@ -78,8 +78,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(146)))), ((int)(((byte)(164)))));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1027, 113);
+            this.pictureBox1.Size = new System.Drawing.Size(1369, 139);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -88,10 +89,10 @@
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(146)))), ((int)(((byte)(164)))));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 553);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 681);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1027, 82);
+            this.pictureBox2.Size = new System.Drawing.Size(1369, 101);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
@@ -105,10 +106,10 @@
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox3.ContextMenuStrip = this.contextMenuStrip1;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox3.Location = new System.Drawing.Point(473, 11);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Location = new System.Drawing.Point(631, 14);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(77, 89);
+            this.pictureBox3.Size = new System.Drawing.Size(103, 110);
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
             this.toolTip1.SetToolTip(this.pictureBox3, "Натисни десен бутон за да промениш логото");
@@ -116,12 +117,13 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Font = new System.Drawing.Font("Jura", 12F, System.Drawing.FontStyle.Bold);
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.eDITToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.contextMenuStrip1.ShowImageMargin = false;
-            this.contextMenuStrip1.Size = new System.Drawing.Size(93, 30);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(104, 36);
             // 
             // eDITToolStripMenuItem
             // 
@@ -129,20 +131,20 @@
             this.dEFAULTToolStripMenuItem,
             this.cUSTOMToolStripMenuItem});
             this.eDITToolStripMenuItem.Name = "eDITToolStripMenuItem";
-            this.eDITToolStripMenuItem.Size = new System.Drawing.Size(92, 26);
+            this.eDITToolStripMenuItem.Size = new System.Drawing.Size(103, 32);
             this.eDITToolStripMenuItem.Text = "EDIT";
             // 
             // dEFAULTToolStripMenuItem
             // 
             this.dEFAULTToolStripMenuItem.Name = "dEFAULTToolStripMenuItem";
-            this.dEFAULTToolStripMenuItem.Size = new System.Drawing.Size(151, 26);
+            this.dEFAULTToolStripMenuItem.Size = new System.Drawing.Size(183, 32);
             this.dEFAULTToolStripMenuItem.Text = "DEFAULT";
             this.dEFAULTToolStripMenuItem.Click += new System.EventHandler(this.dEFAULTToolStripMenuItem_Click);
             // 
             // cUSTOMToolStripMenuItem
             // 
             this.cUSTOMToolStripMenuItem.Name = "cUSTOMToolStripMenuItem";
-            this.cUSTOMToolStripMenuItem.Size = new System.Drawing.Size(151, 26);
+            this.cUSTOMToolStripMenuItem.Size = new System.Drawing.Size(183, 32);
             this.cUSTOMToolStripMenuItem.Text = "CUSTOM";
             this.cUSTOMToolStripMenuItem.Click += new System.EventHandler(this.cUSTOMToolStripMenuItem_Click);
             // 
@@ -153,9 +155,10 @@
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(146)))), ((int)(((byte)(164)))));
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = global::SchoolRing.Properties.Resources.system_solid_140_help_center;
-            this.pictureBox4.Location = new System.Drawing.Point(12, 553);
+            this.pictureBox4.Location = new System.Drawing.Point(16, 681);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(63, 50);
+            this.pictureBox4.Size = new System.Drawing.Size(84, 62);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 23;
             this.pictureBox4.TabStop = false;
@@ -170,10 +173,9 @@
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Jura", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(239)))), ((int)(((byte)(237)))));
-            this.label1.Location = new System.Drawing.Point(14, 601);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(19, 740);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 22);
+            this.label1.Size = new System.Drawing.Size(80, 27);
             this.label1.TabIndex = 24;
             this.label1.Text = "ПОМОЩ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -187,10 +189,9 @@
             this.labelDayOfWeek.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelDayOfWeek.Font = new System.Drawing.Font("Jura", 37F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDayOfWeek.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(239)))), ((int)(((byte)(237)))));
-            this.labelDayOfWeek.Location = new System.Drawing.Point(229, 554);
-            this.labelDayOfWeek.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDayOfWeek.Location = new System.Drawing.Point(305, 682);
             this.labelDayOfWeek.Name = "labelDayOfWeek";
-            this.labelDayOfWeek.Size = new System.Drawing.Size(544, 71);
+            this.labelDayOfWeek.Size = new System.Drawing.Size(725, 87);
             this.labelDayOfWeek.TabIndex = 31;
             this.labelDayOfWeek.Text = "dayOfWeek";
             this.labelDayOfWeek.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -202,9 +203,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(8, 0);
+            this.pictureBox7.Location = new System.Drawing.Point(11, 0);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(75, 66);
+            this.pictureBox7.Size = new System.Drawing.Size(100, 81);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 41;
             this.pictureBox7.TabStop = false;
@@ -219,10 +221,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Jura", 30F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(108)))), ((int)(((byte)(6)))));
-            this.label7.Location = new System.Drawing.Point(61, 77);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(81, 95);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(283, 53);
+            this.label7.Size = new System.Drawing.Size(349, 66);
             this.label7.TabIndex = 9;
             this.label7.Text = "Вариант 1 ->";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -235,10 +236,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Jura", 30F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(108)))), ((int)(((byte)(6)))));
-            this.label2.Location = new System.Drawing.Point(702, 255);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(936, 314);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(290, 53);
+            this.label2.Size = new System.Drawing.Size(359, 66);
             this.label2.TabIndex = 42;
             this.label2.Text = "<- Вариант 2";
             // 
@@ -247,9 +247,10 @@
             this.pictureBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox6.Location = new System.Drawing.Point(4, 215);
+            this.pictureBox6.Location = new System.Drawing.Point(5, 265);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(662, 218);
+            this.pictureBox6.Size = new System.Drawing.Size(883, 268);
             this.pictureBox6.TabIndex = 33;
             this.pictureBox6.TabStop = false;
             // 
@@ -262,10 +263,10 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Jura", 20F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(108)))), ((int)(((byte)(6)))));
-            this.button1.Location = new System.Drawing.Point(676, 325);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(901, 400);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(336, 87);
+            this.button1.Size = new System.Drawing.Size(448, 107);
             this.button1.TabIndex = 10;
             this.button1.Text = "Персонализирайте стойностите от тук";
             this.button1.UseVisualStyleBackColor = false;
@@ -282,9 +283,10 @@
             this.Template2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Template2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Template2.Image = global::SchoolRing.Properties.Resources.Screenshot_45;
-            this.Template2.Location = new System.Drawing.Point(8, 218);
+            this.Template2.Location = new System.Drawing.Point(11, 268);
+            this.Template2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Template2.Name = "Template2";
-            this.Template2.Size = new System.Drawing.Size(654, 212);
+            this.Template2.Size = new System.Drawing.Size(872, 261);
             this.Template2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Template2.TabIndex = 13;
             this.Template2.TabStop = false;
@@ -301,9 +303,10 @@
             this.labelTemplate2ClassLength.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelTemplate2ClassLength.Font = new System.Drawing.Font("Jura", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTemplate2ClassLength.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(239)))), ((int)(((byte)(237)))));
-            this.labelTemplate2ClassLength.Location = new System.Drawing.Point(449, 234);
+            this.labelTemplate2ClassLength.Location = new System.Drawing.Point(599, 288);
+            this.labelTemplate2ClassLength.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTemplate2ClassLength.Name = "labelTemplate2ClassLength";
-            this.labelTemplate2ClassLength.Size = new System.Drawing.Size(38, 29);
+            this.labelTemplate2ClassLength.Size = new System.Drawing.Size(51, 36);
             this.labelTemplate2ClassLength.TabIndex = 19;
             this.labelTemplate2ClassLength.Text = "40";
             this.labelTemplate2ClassLength.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -318,9 +321,10 @@
             this.labelTemplate2SmallBreak.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelTemplate2SmallBreak.Font = new System.Drawing.Font("Jura", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTemplate2SmallBreak.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(239)))), ((int)(((byte)(237)))));
-            this.labelTemplate2SmallBreak.Location = new System.Drawing.Point(504, 280);
+            this.labelTemplate2SmallBreak.Location = new System.Drawing.Point(672, 345);
+            this.labelTemplate2SmallBreak.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTemplate2SmallBreak.Name = "labelTemplate2SmallBreak";
-            this.labelTemplate2SmallBreak.Size = new System.Drawing.Size(38, 29);
+            this.labelTemplate2SmallBreak.Size = new System.Drawing.Size(51, 36);
             this.labelTemplate2SmallBreak.TabIndex = 20;
             this.labelTemplate2SmallBreak.Text = "40";
             this.labelTemplate2SmallBreak.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -335,9 +339,10 @@
             this.labelTemplate2LongBreak.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelTemplate2LongBreak.Font = new System.Drawing.Font("Jura", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTemplate2LongBreak.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(239)))), ((int)(((byte)(237)))));
-            this.labelTemplate2LongBreak.Location = new System.Drawing.Point(512, 327);
+            this.labelTemplate2LongBreak.Location = new System.Drawing.Point(683, 402);
+            this.labelTemplate2LongBreak.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTemplate2LongBreak.Name = "labelTemplate2LongBreak";
-            this.labelTemplate2LongBreak.Size = new System.Drawing.Size(38, 29);
+            this.labelTemplate2LongBreak.Size = new System.Drawing.Size(51, 36);
             this.labelTemplate2LongBreak.TabIndex = 21;
             this.labelTemplate2LongBreak.Text = "40";
             this.labelTemplate2LongBreak.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -352,9 +357,10 @@
             this.labelTemplate2LongBreakAfter.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelTemplate2LongBreakAfter.Font = new System.Drawing.Font("Jura", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTemplate2LongBreakAfter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(239)))), ((int)(((byte)(237)))));
-            this.labelTemplate2LongBreakAfter.Location = new System.Drawing.Point(442, 373);
+            this.labelTemplate2LongBreakAfter.Location = new System.Drawing.Point(589, 459);
+            this.labelTemplate2LongBreakAfter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTemplate2LongBreakAfter.Name = "labelTemplate2LongBreakAfter";
-            this.labelTemplate2LongBreakAfter.Size = new System.Drawing.Size(38, 29);
+            this.labelTemplate2LongBreakAfter.Size = new System.Drawing.Size(51, 36);
             this.labelTemplate2LongBreakAfter.TabIndex = 22;
             this.labelTemplate2LongBreakAfter.Text = "40";
             this.labelTemplate2LongBreakAfter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -365,9 +371,10 @@
             this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox5.Location = new System.Drawing.Point(359, 0);
+            this.pictureBox5.Location = new System.Drawing.Point(479, 0);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(658, 215);
+            this.pictureBox5.Size = new System.Drawing.Size(877, 265);
             this.pictureBox5.TabIndex = 32;
             this.pictureBox5.TabStop = false;
             // 
@@ -380,9 +387,10 @@
             this.Template1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Template1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Template1.Image = global::SchoolRing.Properties.Resources.Screenshot_45;
-            this.Template1.Location = new System.Drawing.Point(363, 2);
+            this.Template1.Location = new System.Drawing.Point(484, 2);
+            this.Template1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Template1.Name = "Template1";
-            this.Template1.Size = new System.Drawing.Size(650, 210);
+            this.Template1.Size = new System.Drawing.Size(867, 258);
             this.Template1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Template1.TabIndex = 12;
             this.Template1.TabStop = false;
@@ -399,9 +407,10 @@
             this.labelTemplate1ClassLength.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelTemplate1ClassLength.Font = new System.Drawing.Font("Jura", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTemplate1ClassLength.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(239)))), ((int)(((byte)(237)))));
-            this.labelTemplate1ClassLength.Location = new System.Drawing.Point(802, 18);
+            this.labelTemplate1ClassLength.Location = new System.Drawing.Point(1069, 22);
+            this.labelTemplate1ClassLength.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTemplate1ClassLength.Name = "labelTemplate1ClassLength";
-            this.labelTemplate1ClassLength.Size = new System.Drawing.Size(38, 29);
+            this.labelTemplate1ClassLength.Size = new System.Drawing.Size(51, 36);
             this.labelTemplate1ClassLength.TabIndex = 15;
             this.labelTemplate1ClassLength.Text = "40";
             this.labelTemplate1ClassLength.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -416,9 +425,10 @@
             this.labelTemplate1SmallBreak.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelTemplate1SmallBreak.Font = new System.Drawing.Font("Jura", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTemplate1SmallBreak.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(239)))), ((int)(((byte)(237)))));
-            this.labelTemplate1SmallBreak.Location = new System.Drawing.Point(857, 64);
+            this.labelTemplate1SmallBreak.Location = new System.Drawing.Point(1143, 79);
+            this.labelTemplate1SmallBreak.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTemplate1SmallBreak.Name = "labelTemplate1SmallBreak";
-            this.labelTemplate1SmallBreak.Size = new System.Drawing.Size(38, 29);
+            this.labelTemplate1SmallBreak.Size = new System.Drawing.Size(51, 36);
             this.labelTemplate1SmallBreak.TabIndex = 16;
             this.labelTemplate1SmallBreak.Text = "40";
             this.labelTemplate1SmallBreak.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -433,9 +443,10 @@
             this.labelTemplate1LongBreak.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelTemplate1LongBreak.Font = new System.Drawing.Font("Jura", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTemplate1LongBreak.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(239)))), ((int)(((byte)(237)))));
-            this.labelTemplate1LongBreak.Location = new System.Drawing.Point(865, 110);
+            this.labelTemplate1LongBreak.Location = new System.Drawing.Point(1153, 135);
+            this.labelTemplate1LongBreak.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTemplate1LongBreak.Name = "labelTemplate1LongBreak";
-            this.labelTemplate1LongBreak.Size = new System.Drawing.Size(38, 29);
+            this.labelTemplate1LongBreak.Size = new System.Drawing.Size(51, 36);
             this.labelTemplate1LongBreak.TabIndex = 17;
             this.labelTemplate1LongBreak.Text = "40";
             this.labelTemplate1LongBreak.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -450,9 +461,10 @@
             this.labelTemplate1LongBreakAfter.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelTemplate1LongBreakAfter.Font = new System.Drawing.Font("Jura", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTemplate1LongBreakAfter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(239)))), ((int)(((byte)(237)))));
-            this.labelTemplate1LongBreakAfter.Location = new System.Drawing.Point(796, 156);
+            this.labelTemplate1LongBreakAfter.Location = new System.Drawing.Point(1061, 192);
+            this.labelTemplate1LongBreakAfter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTemplate1LongBreakAfter.Name = "labelTemplate1LongBreakAfter";
-            this.labelTemplate1LongBreakAfter.Size = new System.Drawing.Size(38, 29);
+            this.labelTemplate1LongBreakAfter.Size = new System.Drawing.Size(51, 36);
             this.labelTemplate1LongBreakAfter.TabIndex = 18;
             this.labelTemplate1LongBreakAfter.Text = "40";
             this.labelTemplate1LongBreakAfter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -478,9 +490,10 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(4, 118);
+            this.panel1.Location = new System.Drawing.Point(5, 145);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1023, 434);
+            this.panel1.Size = new System.Drawing.Size(1364, 534);
             this.panel1.TabIndex = 43;
             // 
             // toolTip1
@@ -491,10 +504,10 @@
             // 
             // Templates
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(239)))), ((int)(((byte)(237)))));
-            this.ClientSize = new System.Drawing.Size(1027, 627);
+            this.ClientSize = new System.Drawing.Size(1369, 772);
             this.Controls.Add(this.labelDayOfWeek);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox4);
@@ -503,7 +516,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "Templates";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

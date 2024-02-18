@@ -1,12 +1,6 @@
-﻿using NAudio.Wave.SampleProviders;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using SchoolRing.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SchoolRing
 {
@@ -16,9 +10,9 @@ namespace SchoolRing
         [JsonProperty("startDate")]
         private DateTime startDate;
         [JsonProperty("endDate")]
-		private DateTime endDate;
+        private DateTime endDate;
         [JsonProperty("argument")]
-		private string argument;
+        private string argument;
 
         public VacationalDays(string argument, DateTime startDate, DateTime endDate)
         {
@@ -28,22 +22,22 @@ namespace SchoolRing
         }
 
         public string Argument
-		{
-			get { return argument; }
-			set { argument = value; }
-		}
-
-		public DateTime EndDate
-		{
-			get { return endDate; }
-			set { endDate = value; }
-		}
-
-		public DateTime StartDate
         {
-			get { return startDate; }
-			set { startDate = value; }
-		}
+            get { return argument; }
+            set { argument = value; }
+        }
+
+        public DateTime EndDate
+        {
+            get { return endDate; }
+            set { endDate = value; }
+        }
+
+        public DateTime StartDate
+        {
+            get { return startDate; }
+            set { startDate = value; }
+        }
 
     }
 }

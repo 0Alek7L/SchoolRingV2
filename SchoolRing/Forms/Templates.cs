@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace SchoolRing
 {
@@ -153,7 +152,7 @@ namespace SchoolRing
             //if (Program.HaveBeenIntoMainMenu)
             //    panel1.Hide();
             //else
-                panel1.Show();
+            panel1.Show();
         }
     }
 }

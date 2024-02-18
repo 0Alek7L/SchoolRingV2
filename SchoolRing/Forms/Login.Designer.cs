@@ -65,10 +65,9 @@
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Jura", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(239)))), ((int)(((byte)(237)))));
-            this.label1.Location = new System.Drawing.Point(14, 603);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(19, 742);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 22);
+            this.label1.Size = new System.Drawing.Size(80, 27);
             this.label1.TabIndex = 49;
             this.label1.Text = "ПОМОЩ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -81,9 +80,10 @@
             this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(146)))), ((int)(((byte)(164)))));
             this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Image = global::SchoolRing.Properties.Resources.system_solid_140_help_center;
-            this.pictureBox6.Location = new System.Drawing.Point(12, 555);
+            this.pictureBox6.Location = new System.Drawing.Point(16, 683);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(63, 50);
+            this.pictureBox6.Size = new System.Drawing.Size(84, 62);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 48;
             this.pictureBox6.TabStop = false;
@@ -95,9 +95,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(0, 121);
+            this.pictureBox5.Location = new System.Drawing.Point(0, 149);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(75, 66);
+            this.pictureBox5.Size = new System.Drawing.Size(100, 81);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 47;
             this.pictureBox5.TabStop = false;
@@ -112,10 +113,9 @@
             this.labelDayOfWeek.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelDayOfWeek.Font = new System.Drawing.Font("Jura", 37F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDayOfWeek.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(239)))), ((int)(((byte)(237)))));
-            this.labelDayOfWeek.Location = new System.Drawing.Point(239, 557);
-            this.labelDayOfWeek.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDayOfWeek.Location = new System.Drawing.Point(319, 686);
             this.labelDayOfWeek.Name = "labelDayOfWeek";
-            this.labelDayOfWeek.Size = new System.Drawing.Size(544, 71);
+            this.labelDayOfWeek.Size = new System.Drawing.Size(725, 87);
             this.labelDayOfWeek.TabIndex = 46;
             this.labelDayOfWeek.Text = "dayOfWeek";
             this.labelDayOfWeek.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -130,10 +130,10 @@
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox3.ContextMenuStrip = this.contextMenuStrip1;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox3.Location = new System.Drawing.Point(473, 15);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Location = new System.Drawing.Point(631, 18);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(77, 89);
+            this.pictureBox3.Size = new System.Drawing.Size(103, 110);
             this.pictureBox3.TabIndex = 45;
             this.pictureBox3.TabStop = false;
             this.toolTip1.SetToolTip(this.pictureBox3, "Натисни десен бутон за да промениш логото");
@@ -141,12 +141,13 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Font = new System.Drawing.Font("Jura", 12F, System.Drawing.FontStyle.Bold);
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.eDITToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.contextMenuStrip1.ShowImageMargin = false;
-            this.contextMenuStrip1.Size = new System.Drawing.Size(93, 30);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(104, 36);
             // 
             // eDITToolStripMenuItem
             // 
@@ -154,20 +155,20 @@
             this.dEFAULTToolStripMenuItem,
             this.cUSTOMToolStripMenuItem});
             this.eDITToolStripMenuItem.Name = "eDITToolStripMenuItem";
-            this.eDITToolStripMenuItem.Size = new System.Drawing.Size(92, 26);
+            this.eDITToolStripMenuItem.Size = new System.Drawing.Size(103, 32);
             this.eDITToolStripMenuItem.Text = "EDIT";
             // 
             // dEFAULTToolStripMenuItem
             // 
             this.dEFAULTToolStripMenuItem.Name = "dEFAULTToolStripMenuItem";
-            this.dEFAULTToolStripMenuItem.Size = new System.Drawing.Size(151, 26);
+            this.dEFAULTToolStripMenuItem.Size = new System.Drawing.Size(183, 32);
             this.dEFAULTToolStripMenuItem.Text = "DEFAULT";
             this.dEFAULTToolStripMenuItem.Click += new System.EventHandler(this.dEFAULTToolStripMenuItem_Click);
             // 
             // cUSTOMToolStripMenuItem
             // 
             this.cUSTOMToolStripMenuItem.Name = "cUSTOMToolStripMenuItem";
-            this.cUSTOMToolStripMenuItem.Size = new System.Drawing.Size(151, 26);
+            this.cUSTOMToolStripMenuItem.Size = new System.Drawing.Size(183, 32);
             this.cUSTOMToolStripMenuItem.Text = "CUSTOM";
             this.cUSTOMToolStripMenuItem.Click += new System.EventHandler(this.cUSTOMToolStripMenuItem_Click);
             // 
@@ -176,10 +177,10 @@
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(146)))), ((int)(((byte)(164)))));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 555);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 683);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1027, 133);
+            this.pictureBox2.Size = new System.Drawing.Size(1369, 164);
             this.pictureBox2.TabIndex = 44;
             this.pictureBox2.TabStop = false;
             // 
@@ -190,8 +191,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(146)))), ((int)(((byte)(164)))));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1027, 113);
+            this.pictureBox1.Size = new System.Drawing.Size(1369, 139);
             this.pictureBox1.TabIndex = 43;
             this.pictureBox1.TabStop = false;
             // 
@@ -203,9 +205,10 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Jura", 40F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(146)))), ((int)(((byte)(164)))));
-            this.button1.Location = new System.Drawing.Point(173, 200);
+            this.button1.Location = new System.Drawing.Point(231, 246);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(675, 90);
+            this.button1.Size = new System.Drawing.Size(900, 111);
             this.button1.TabIndex = 50;
             this.button1.Text = "ЗА УЧИТЕЛ";
             this.button1.UseVisualStyleBackColor = false;
@@ -221,9 +224,10 @@
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Jura", 40F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(146)))), ((int)(((byte)(164)))));
-            this.button2.Location = new System.Drawing.Point(173, 362);
+            this.button2.Location = new System.Drawing.Point(231, 446);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(675, 90);
+            this.button2.Size = new System.Drawing.Size(900, 111);
             this.button2.TabIndex = 51;
             this.button2.Text = "ЗА УЧИЛИЩЕ";
             this.button2.UseVisualStyleBackColor = false;
@@ -238,9 +242,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Jura", 18F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(163)))), ((int)(((byte)(163)))));
-            this.label2.Location = new System.Drawing.Point(134, 292);
+            this.label2.Location = new System.Drawing.Point(179, 359);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(751, 31);
+            this.label2.Size = new System.Drawing.Size(934, 40);
             this.label2.TabIndex = 52;
             this.label2.Text = "  Въвежда се учебен график по часове (кога, с кой клас).";
             // 
@@ -251,9 +256,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Jura", 18F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(163)))), ((int)(((byte)(163)))));
-            this.label3.Location = new System.Drawing.Point(374, 475);
+            this.label3.Location = new System.Drawing.Point(499, 585);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(335, 31);
+            this.label3.Size = new System.Drawing.Size(420, 40);
             this.label3.TabIndex = 53;
             this.label3.Text = "(без учебно разписание)";
             // 
@@ -264,9 +270,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Jura", 18F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(163)))), ((int)(((byte)(163)))));
-            this.label4.Location = new System.Drawing.Point(167, 453);
+            this.label4.Location = new System.Drawing.Point(223, 558);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(695, 31);
+            this.label4.Size = new System.Drawing.Size(865, 40);
             this.label4.TabIndex = 54;
             this.label4.Text = "Не се използва учебен график с часове по класове.";
             // 
@@ -277,9 +284,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Jura", 18F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(163)))), ((int)(((byte)(163)))));
-            this.label5.Location = new System.Drawing.Point(384, 316);
+            this.label5.Location = new System.Drawing.Point(512, 389);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(303, 31);
+            this.label5.Size = new System.Drawing.Size(380, 40);
             this.label5.TabIndex = 55;
             this.label5.Text = "(с учебно разписание)";
             // 
@@ -291,9 +299,9 @@
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1027, 631);
+            this.ClientSize = new System.Drawing.Size(1369, 777);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -308,6 +316,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

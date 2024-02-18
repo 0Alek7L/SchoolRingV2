@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SchoolRing
@@ -55,7 +49,7 @@ namespace SchoolRing
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Program.WithClassSchedule = false;            
+            Program.WithClassSchedule = false;
             Program.LastForms.Push(this);
             MainMenu main = new MainMenu();
             this.Hide();

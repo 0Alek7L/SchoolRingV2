@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SchoolRing
@@ -14,28 +16,26 @@ namespace SchoolRing
     {
         private static MainMenu instance;
         System.Windows.Forms.Timer timer;
-        System.Windows.Forms.Timer timerForDisposment;
+        System.Windows.Forms.Timer timer2;
         List<ISchoolClass> classesLeftAsObjects;
         public MainMenu()
         {
             InitializeComponent();
             //Hide the problematic refreshBox
-            pictureBoxRefresh.Hide();
+            //pictureBoxRefresh.Hide();
             //AskForMelody();
             Program.HaveBeenIntoMainMenu = true;
             //SaveTheData.SaveSchoolClasses();
             timer = new System.Windows.Forms.Timer();
-            timerForDisposment = new System.Windows.Forms.Timer();
+            timer2 = new System.Windows.Forms.Timer();
             timer.Interval = 100;
-            timerForDisposment.Interval = 5000;
+            timer2.Interval = 1000;
             timer.Tick += Timer_Tick;
             timer.Tick += Timer_TickForMovingLabel;
             timer.Tick += Timer_TickForNotes;
-            timerForDisposment.Tick += Timer_TickForDisposingTheHiddenForms;
-            //timer.Tick += Timer_TickForSpecialTasks;
-            timer.Tick += Timer_TickForMelody;
+            timer2.Tick += Timer_TickForMelody;
+            timer2.Start();
             timer.Start();
-            timerForDisposment.Start();
             currentClass = null;
             nextClass = null;
             labelShowNextClass.Text = "-";
@@ -73,22 +73,6 @@ namespace SchoolRing
             }
             Program.ShowTheCurrentIcon(pictureBox3);
             labelForVacation.Click += LabelForVacation_Click;
-        }
-
-        private void Timer_TickForDisposingTheHiddenForms(object sender, EventArgs e)
-        {
-            if (this.Visible == true && this is MainMenu)
-            {
-                foreach (Form form in Application.OpenForms)
-                {
-                    if (!form.Visible)
-                    {
-                        
-                        //form.Dispose();
-                        break;
-                    }
-                }
-            }
         }
 
         public static MainMenu Instance
@@ -133,13 +117,15 @@ namespace SchoolRing
                     {
                         if (currentTime == new TimeSpan(currentClass.StartHours, currentClass.StartMinutes, 0))
                         {
+                            bool isThereAProblem = false;
                             if (Program.melodyForStartOfClassPath == null)
                             {
                                 System.Windows.Forms.MessageBox.Show("Не е избрана мелодия за начало на час!");
                                 checkBox1.Checked = false;
                                 Program.allowRinging = false;
+                                isThereAProblem = true;
                             }
-                            if (!currentClass.IsMerged && !hasRangForStart && Program.allowRinging)//change2
+                            if (!currentClass.IsMerged && !hasRangForStart && Program.allowRinging && !isThereAProblem)//change2
                             {
                                 MelodyFiles.Reinitialise();
                                 MelodyFiles.PlayStartAsync();
@@ -150,13 +136,15 @@ namespace SchoolRing
 
                         else if (currentTime == new TimeSpan(currentClass.EndHours, currentClass.EndMinutes, 0))
                         {
+                            bool isThereAProblems = false;
                             if (Program.melodyForEndOfClassPath == null)
                             {
                                 System.Windows.Forms.MessageBox.Show("Не е избрана мелодия за край на час!");
                                 checkBox1.Checked = false;
                                 Program.allowRinging = false;
+                                isThereAProblems = true;
                             }
-                            if (!currentClass.IsMerged && !hasRangForEnd && Program.allowRinging)//change
+                            if (!currentClass.IsMerged && !hasRangForEnd && Program.allowRinging && !isThereAProblems)//change
                             {
                                 MelodyFiles.Reinitialise();
                                 MelodyFiles.PlayEndAsync();
@@ -176,7 +164,6 @@ namespace SchoolRing
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Грешка: " + ex.Message);
             }
             currentClass = null;
             nextClass = null;
@@ -308,7 +295,7 @@ namespace SchoolRing
 
                     currentClassNote = tempNote;
                 }
-                if (tempNote == null||currentClassNote==null)
+                if (tempNote == null || currentClassNote == null)
                 {
                     labelForVacation.Hide();
                 }
@@ -320,12 +307,6 @@ namespace SchoolRing
         {
             if (!Program.vdRepo.IsTodayVacation())
             {
-                //StringBuilder sb = new StringBuilder();
-                //foreach (var item in Program.noteRepo.GetModels())
-                //{
-                //    sb.AppendLine(item.Date.ToShortTimeString() + " " + item.ClassNum + " " + item.Text);
-                //}
-                //MessageBox.Show(sb.ToString());
                 labelForVacation.BackColor = Color.Gray;
                 MessageBox.Show($"{currentClassNote.Text}", "Записки за този час");
             }
@@ -885,13 +866,7 @@ namespace SchoolRing
 
         public void pictureBoxRefresh_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            MainMenu.Instance.Refresh();
-            while (Program.LastForms.Count > 0)
-            {
-                Program.LastForms.Pop().Dispose();
-            }
-            this.Show();
+            Application.Restart();
         }
 
         private void labelMergeClasses_Click(object sender, EventArgs e)
@@ -923,7 +898,7 @@ namespace SchoolRing
                 {
                     SaveTheData.SaveProperties();
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }

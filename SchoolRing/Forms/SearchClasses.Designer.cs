@@ -66,10 +66,9 @@
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Jura", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(239)))), ((int)(((byte)(237)))));
-            this.label1.Location = new System.Drawing.Point(14, 595);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(19, 732);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 22);
+            this.label1.Size = new System.Drawing.Size(80, 27);
             this.label1.TabIndex = 63;
             this.label1.Text = "ПОМОЩ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -82,9 +81,10 @@
             this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(146)))), ((int)(((byte)(164)))));
             this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Image = global::SchoolRing.Properties.Resources.system_solid_140_help_center;
-            this.pictureBox6.Location = new System.Drawing.Point(12, 547);
+            this.pictureBox6.Location = new System.Drawing.Point(16, 673);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(63, 50);
+            this.pictureBox6.Size = new System.Drawing.Size(84, 62);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 62;
             this.pictureBox6.TabStop = false;
@@ -96,9 +96,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(0, 113);
+            this.pictureBox5.Location = new System.Drawing.Point(0, 139);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(75, 66);
+            this.pictureBox5.Size = new System.Drawing.Size(100, 81);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 61;
             this.pictureBox5.TabStop = false;
@@ -113,10 +114,9 @@
             this.labelDayOfWeek.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelDayOfWeek.Font = new System.Drawing.Font("Jura", 37F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDayOfWeek.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(239)))), ((int)(((byte)(237)))));
-            this.labelDayOfWeek.Location = new System.Drawing.Point(239, 549);
-            this.labelDayOfWeek.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDayOfWeek.Location = new System.Drawing.Point(319, 676);
             this.labelDayOfWeek.Name = "labelDayOfWeek";
-            this.labelDayOfWeek.Size = new System.Drawing.Size(544, 71);
+            this.labelDayOfWeek.Size = new System.Drawing.Size(725, 87);
             this.labelDayOfWeek.TabIndex = 60;
             this.labelDayOfWeek.Text = "dayOfWeek";
             this.labelDayOfWeek.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -131,10 +131,10 @@
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox3.ContextMenuStrip = this.contextMenuStrip1;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox3.Location = new System.Drawing.Point(473, 7);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Location = new System.Drawing.Point(631, 9);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(77, 89);
+            this.pictureBox3.Size = new System.Drawing.Size(103, 110);
             this.pictureBox3.TabIndex = 59;
             this.pictureBox3.TabStop = false;
             this.toolTip1.SetToolTip(this.pictureBox3, "Натисни десен бутон за да промениш логото");
@@ -142,12 +142,13 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Font = new System.Drawing.Font("Jura", 12F, System.Drawing.FontStyle.Bold);
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.eDITToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.contextMenuStrip1.ShowImageMargin = false;
-            this.contextMenuStrip1.Size = new System.Drawing.Size(93, 30);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(104, 36);
             // 
             // eDITToolStripMenuItem
             // 
@@ -155,20 +156,20 @@
             this.dEFAULTToolStripMenuItem,
             this.cUSTOMToolStripMenuItem});
             this.eDITToolStripMenuItem.Name = "eDITToolStripMenuItem";
-            this.eDITToolStripMenuItem.Size = new System.Drawing.Size(92, 26);
+            this.eDITToolStripMenuItem.Size = new System.Drawing.Size(103, 32);
             this.eDITToolStripMenuItem.Text = "EDIT";
             // 
             // dEFAULTToolStripMenuItem
             // 
             this.dEFAULTToolStripMenuItem.Name = "dEFAULTToolStripMenuItem";
-            this.dEFAULTToolStripMenuItem.Size = new System.Drawing.Size(151, 26);
+            this.dEFAULTToolStripMenuItem.Size = new System.Drawing.Size(183, 32);
             this.dEFAULTToolStripMenuItem.Text = "DEFAULT";
             this.dEFAULTToolStripMenuItem.Click += new System.EventHandler(this.dEFAULTToolStripMenuItem_Click);
             // 
             // cUSTOMToolStripMenuItem
             // 
             this.cUSTOMToolStripMenuItem.Name = "cUSTOMToolStripMenuItem";
-            this.cUSTOMToolStripMenuItem.Size = new System.Drawing.Size(151, 26);
+            this.cUSTOMToolStripMenuItem.Size = new System.Drawing.Size(183, 32);
             this.cUSTOMToolStripMenuItem.Text = "CUSTOM";
             this.cUSTOMToolStripMenuItem.Click += new System.EventHandler(this.cUSTOMToolStripMenuItem_Click);
             // 
@@ -177,10 +178,10 @@
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(146)))), ((int)(((byte)(164)))));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 547);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 673);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1027, 84);
+            this.pictureBox2.Size = new System.Drawing.Size(1369, 103);
             this.pictureBox2.TabIndex = 58;
             this.pictureBox2.TabStop = false;
             // 
@@ -191,8 +192,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(146)))), ((int)(((byte)(164)))));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1027, 113);
+            this.pictureBox1.Size = new System.Drawing.Size(1369, 139);
             this.pictureBox1.TabIndex = 57;
             this.pictureBox1.TabStop = false;
             // 
@@ -201,9 +203,10 @@
             this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox4.Image = global::SchoolRing.Properties.Resources.Screenshot_48;
-            this.pictureBox4.Location = new System.Drawing.Point(114, 130);
+            this.pictureBox4.Location = new System.Drawing.Point(152, 160);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(791, 75);
+            this.pictureBox4.Size = new System.Drawing.Size(1055, 92);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 64;
             this.pictureBox4.TabStop = false;
@@ -215,9 +218,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.Font = new System.Drawing.Font("Jura Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(115, 196);
+            this.label2.Location = new System.Drawing.Point(153, 241);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(791, 38);
+            this.label2.Size = new System.Drawing.Size(1055, 47);
             this.label2.TabIndex = 65;
             this.label2.Text = "Потърси клас и/или паралелка, за да видиш кога имаш час с него най-скоро.";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -227,9 +231,10 @@
             this.pictureBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox7.Image = global::SchoolRing.Properties.Resources.Screenshot_49;
-            this.pictureBox7.Location = new System.Drawing.Point(225, 238);
+            this.pictureBox7.Location = new System.Drawing.Point(300, 293);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(572, 307);
+            this.pictureBox7.Size = new System.Drawing.Size(763, 378);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 66;
             this.pictureBox7.TabStop = false;
@@ -242,10 +247,11 @@
             this.textBoxSearchInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxSearchInput.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxSearchInput.Font = new System.Drawing.Font("Jura SemiBold", 25F);
-            this.textBoxSearchInput.Location = new System.Drawing.Point(149, 146);
+            this.textBoxSearchInput.Location = new System.Drawing.Point(199, 180);
+            this.textBoxSearchInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxSearchInput.MaxLength = 17;
             this.textBoxSearchInput.Name = "textBoxSearchInput";
-            this.textBoxSearchInput.Size = new System.Drawing.Size(634, 40);
+            this.textBoxSearchInput.Size = new System.Drawing.Size(845, 50);
             this.textBoxSearchInput.TabIndex = 67;
             this.textBoxSearchInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBoxSearchInput.TextChanged += new System.EventHandler(this.textBoxSearchInput_TextChanged);
@@ -261,10 +267,11 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.HorizontalScrollbar = true;
             this.listBox1.IntegralHeight = false;
-            this.listBox1.ItemHeight = 36;
-            this.listBox1.Location = new System.Drawing.Point(255, 255);
+            this.listBox1.ItemHeight = 44;
+            this.listBox1.Location = new System.Drawing.Point(340, 314);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(529, 271);
+            this.listBox1.Size = new System.Drawing.Size(705, 334);
             this.listBox1.TabIndex = 68;
             // 
             // toolTip1
@@ -275,9 +282,9 @@
             // 
             // SearchClasses
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1027, 631);
+            this.ClientSize = new System.Drawing.Size(1369, 777);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.textBoxSearchInput);
             this.Controls.Add(this.pictureBox7);
@@ -291,6 +298,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "SearchClasses";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

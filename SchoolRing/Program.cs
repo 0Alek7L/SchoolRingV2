@@ -3,26 +3,18 @@ using SchoolRing.IO;
 using SchoolRing.Repository;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Drawing;
-using System.IO;
 using System.Linq;
-using System.Security.Principal;
-using System.Threading;
 using System.Windows.Forms;
+
 
 namespace SchoolRing
 {
     internal static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
-
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             time = new TimeForClockAndText();
@@ -30,7 +22,6 @@ namespace SchoolRing
             controller = new Controller();
             vdRepo = new VacationalDaysRepository();
             noteRepo = new NoteRepository();
-
             try
             {
                 SaveTheData.ReadProperties();
@@ -89,6 +80,7 @@ namespace SchoolRing
             }
             else
                 Application.Run(MainMenu.Instance);
+
         }
 
 
@@ -164,7 +156,7 @@ namespace SchoolRing
         public static void ChoosePathForCustomIcon(ContextMenuStrip cms)
         {
 
-            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            using (System.Windows.Forms.OpenFileDialog openFileDialog = new System.Windows.Forms.OpenFileDialog())
             {
                 openFileDialog.Filter = "Image Files|*.bmp;*.jpg;*.png;*.jpeg|All files (*.*)|*.*";
 
@@ -312,6 +304,8 @@ namespace SchoolRing
             }
         }
 
+
     }
 }
+
 

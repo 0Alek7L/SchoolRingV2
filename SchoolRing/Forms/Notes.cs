@@ -1,16 +1,11 @@
-﻿using OfficeOpenXml;
-using SchoolRing.Interfaces;
+﻿using SchoolRing.Interfaces;
 using SchoolRing.IO;
 using SchoolRing.Models;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SchoolRing.Forms
@@ -39,6 +34,7 @@ namespace SchoolRing.Forms
             selectedDate = DateTime.Today;
             panelWrite.Parent = this;
             textBox1.Text = Program.textSizeForNotes.ToString();
+            UpdateLabels();
         }
 
         private void Timer_Tick(object sender, EventArgs e)
@@ -255,7 +251,7 @@ namespace SchoolRing.Forms
             {
                 if (textBoxNote.Text.Length < 5)
                 {
-                    throw new ArgumentException("Дължината на записките за един час трябва да е поне 5 символа!");
+                    throw new ArgumentException("Дължината на записките за един час трябва да е поне 5 символи! Моля, натиснете червения бутон \"Изтрий\" за да затворите този прозорец.");
                 }
                 INote note = new Note(textBoxNote.Text, selectedDate, DateTime.Now, selectedClass.Num, selectedClass.IsPurvaSmqna);
                 if (!Program.noteRepo.IsThereAModel(selectedDate, selectedClass.Num, selectedClass.IsPurvaSmqna))

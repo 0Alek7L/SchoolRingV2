@@ -43,38 +43,52 @@ namespace SchoolRing
         }
         private static void ExportToExcel(List<ISchoolClass> classes, string filePath, bool isPurva)
         {
-            using (var package = new ExcelPackage())
+            bool issuesAccured = false;
+            while (true)
             {
-                var worksheet = package.Workbook.Worksheets.Add("Програма");
-
-                worksheet.Cells[1, 1].Value = "ЧАС";
-                worksheet.Cells[1, 1].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
-                worksheet.Cells[1, 1].Style.Font.Bold = true;
-                worksheet.Cells[1, 1].Style.Font.Size = 14;
-                worksheet.Column(1).Width = 10;
-                worksheet.Cells[1, 2].Value = "ПРОДЪЛЖИ-\nТЕЛНОСТ";
-                worksheet.Cells[1, 2].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
-                worksheet.Cells[1, 2].Style.Font.Bold = true;
-                worksheet.Cells[1, 2].Style.Font.Size = 8;
-                worksheet.Column(2).Width = 30;
-
-                int column = 3;
-                foreach (BulgarianDaysOfWeek day in Enum.GetValues(typeof(BulgarianDaysOfWeek)))
+                try
                 {
-                    worksheet.Cells[1, column].Value = day.ToString();
-                    worksheet.Cells[1, column].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
-                    worksheet.Cells[1, column].Style.Font.Bold = true;
-                    worksheet.Cells[1, column].Style.Font.Size = 14;
-                    worksheet.Column(column).Width = 20;
-                    column++;
-                }
-                if (isPurva)
-                    DrawClassesForShift(classes, worksheet, 2, true);
-                else
-                    DrawClassesForShift(classes, worksheet, 2, false);
+                    using (var package = new ExcelPackage())
+                    {
+                        var worksheet = package.Workbook.Worksheets.Add("Програма");
 
-                FileInfo excelFile = new FileInfo(filePath);
-                package.SaveAs(excelFile);
+                        worksheet.Cells[1, 1].Value = "ЧАС";
+                        worksheet.Cells[1, 1].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+                        worksheet.Cells[1, 1].Style.Font.Bold = true;
+                        worksheet.Cells[1, 1].Style.Font.Size = 14;
+                        worksheet.Column(1).Width = 10;
+                        worksheet.Cells[1, 2].Value = "ПРОДЪЛЖИ-\nТЕЛНОСТ";
+                        worksheet.Cells[1, 2].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+                        worksheet.Cells[1, 2].Style.Font.Bold = true;
+                        worksheet.Cells[1, 2].Style.Font.Size = 8;
+                        worksheet.Column(2).Width = 30;
+
+                        int column = 3;
+                        foreach (BulgarianDaysOfWeek day in Enum.GetValues(typeof(BulgarianDaysOfWeek)))
+                        {
+                            worksheet.Cells[1, column].Value = day.ToString();
+                            worksheet.Cells[1, column].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+                            worksheet.Cells[1, column].Style.Font.Bold = true;
+                            worksheet.Cells[1, column].Style.Font.Size = 14;
+                            worksheet.Column(column).Width = 20;
+                            column++;
+                        }
+                        if (isPurva)
+                            DrawClassesForShift(classes, worksheet, 2, true);
+                        else
+                            DrawClassesForShift(classes, worksheet, 2, false);
+
+                        FileInfo excelFile = new FileInfo(filePath);
+                        package.SaveAs(excelFile);
+                    }
+                    issuesAccured = false;
+                }
+                catch
+                {
+                    issuesAccured = true;
+                }
+                if (!issuesAccured)
+                    break;
             }
         }
 
@@ -139,7 +153,8 @@ namespace SchoolRing
                 cell.AutoFitColumns(15, 30);
                 cell.Style.Fill.PatternType = ExcelFillStyle.Solid;
                 cell.Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
-                cell.Style.Fill.BackgroundColor.SetColor(System.Drawing.Color.LightGray);
+                //cell.Style.Fill.BackgroundColor.SetColor(System.Drawing.Color.LightGray);
+                cell.Style.Fill.BackgroundColor.SetColor(System.Drawing.Color.White);
             }
             //worksheet.Column(1).Width = 10;
             //worksheet.Column(2).Width = 20;
@@ -150,7 +165,9 @@ namespace SchoolRing
                 worksheet.Cells[1, column].Style.Font.Bold = true;
                 worksheet.Cells[1, column].Style.Font.Size = 15;
                 worksheet.Column(column).Width = 18;
-                worksheet.Cells[1, column].Style.Fill.BackgroundColor.SetColor(System.Drawing.Color.Yellow);
+                //worksheet.Cells[1, column].Style.Fill.BackgroundColor.SetColor(System.Drawing.Color.Yellow);
+                worksheet.Cells[1, column].Style.Fill.BackgroundColor.SetColor(System.Drawing.Color.White);
+
                 column++;
             }
             worksheet.Cells[1, 2].Style.Font.Size = 12;
@@ -203,6 +220,7 @@ namespace SchoolRing
                 string filePath = saveFileDialog.FileName;
                 ExportToExcel(classes, filePath, true);
                 RunThePrinter(filePath);
+                this.Focus();
                 ShowCheck(false);
             }
             else
@@ -221,6 +239,7 @@ namespace SchoolRing
                 string filePath = saveFileDialog.FileName;
                 ExportToExcel(classes, filePath, false);
                 RunThePrinter(filePath);
+                this.Focus();
                 ShowCheck(false);
             }
             else
@@ -308,7 +327,7 @@ namespace SchoolRing
 
                         // Set additional print settings if needed
                         worksheet.PageSetup.Orientation = Microsoft.Office.Interop.Excel.XlPageOrientation.xlLandscape;
-
+                        //workbook.PrintPreview(workbook);
                         workbook.PrintOut();
                         workbook.Save();
                     }
@@ -334,7 +353,11 @@ namespace SchoolRing
 
                 if (printDialog.ShowDialog() == DialogResult.OK)
                 {
-                    pd.Print();
+                    try
+                    {
+                        pd.Print();
+                    }
+                    catch { }
                     System.Windows.Forms.MessageBox.Show("Файлът се принтира!");
                 }
                 else

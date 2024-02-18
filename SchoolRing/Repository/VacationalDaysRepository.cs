@@ -2,8 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SchoolRing.Repository
 {
@@ -32,7 +30,7 @@ namespace SchoolRing.Repository
         }
         public IVacationalDays GetModel(DateTime start, DateTime end, string name)
         {
-            if (_days.First(x => x.StartDate == start && x.EndDate == end&&x.Argument==name) != null)
+            if (_days.First(x => x.StartDate == start && x.EndDate == end && x.Argument == name) != null)
                 return _days.First(x => x.StartDate == start && x.EndDate == end && x.Argument == name);
             else
                 return null;

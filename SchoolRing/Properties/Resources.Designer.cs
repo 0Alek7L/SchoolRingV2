@@ -614,6 +614,16 @@ namespace SchoolRing.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_63 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_63", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap system_regular_23_calendar {
             get {
                 object obj = ResourceManager.GetObject("system-regular-23-calendar", resourceCulture);

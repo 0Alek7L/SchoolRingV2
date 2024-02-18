@@ -1,11 +1,6 @@
 ﻿using SchoolRing.Interfaces;
 using SchoolRing.Repository;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace SchoolRing
 {
@@ -22,7 +17,8 @@ namespace SchoolRing
         }
         public void AddNewClass(ISchoolClass model)
         {
-            if(repository.IsThereAModel(model.Day, model.Num, model.IsPurvaSmqna)) { 
+            if (repository.IsThereAModel(model.Day, model.Num, model.IsPurvaSmqna))
+            {
                 repository.UpdateModel(model);
             }
             else
@@ -38,6 +34,6 @@ namespace SchoolRing
             repository.ClearTheSchedule();
         }
 
-       
+
     }
 }

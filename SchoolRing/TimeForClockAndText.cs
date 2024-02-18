@@ -1,10 +1,5 @@
-﻿using NAudio.CoreAudioApi;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Navigation;
 
 namespace SchoolRing
 {
@@ -36,10 +31,10 @@ namespace SchoolRing
         }
         public string PrintDay()
         {
-            switch(date.DayOfWeek.ToString())
+            switch (date.DayOfWeek.ToString())
             {
                 case "Monday": return $"{TimeForClockAndText.dayOfWeekMonday} {date.Day:D2}.{date.Month:D2}";
-                case "Tuesday": return $"{TimeForClockAndText.dayOfWeekTuesday} { date.Day:D2}.{ date.Month:D2}";
+                case "Tuesday": return $"{TimeForClockAndText.dayOfWeekTuesday} {date.Day:D2}.{date.Month:D2}";
                 case "Wednesday": return $"{TimeForClockAndText.dayOfWeekWednesday} {date.Day:D2}.{date.Month:D2}";
                 case "Thursday": return $"{TimeForClockAndText.dayOfWeekThursday} {date.Day:D2}.{date.Month:D2}";
                 case "Friday": return $"{TimeForClockAndText.dayOfWeekFriday} {date.Day:D2}.{date.Month:D2}";

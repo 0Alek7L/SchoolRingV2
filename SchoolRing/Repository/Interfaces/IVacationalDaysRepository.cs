@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SchoolRing.Repository
+﻿namespace SchoolRing.Repository
 {
-    internal interface IVacationalDaysRepository:IVDRepo<SchoolRing.Interfaces.IVacationalDays>
+    internal interface IVacationalDaysRepository : IVDRepo<SchoolRing.Interfaces.IVacationalDays>
     {
     }
 }
